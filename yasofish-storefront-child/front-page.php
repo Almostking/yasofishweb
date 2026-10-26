@@ -15,6 +15,7 @@ $logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'medium' ) : get_t
 			<span class="yf-hero__eyebrow"><?php esc_html_e( 'Equípate con YASOFISH Chile', 'yasofish-storefront' ); ?></span>
 			<h1 id="yf-hero-title"><?php echo wp_kses( nl2br( esc_html( $hero_title ) ), array( 'br' => array() ) ); ?></h1>
 			<p><?php echo esc_html( $hero_copy ); ?></p>
+			<p class="yf-sme-note"><?php esc_html_e( 'Somos una pyme chilena que está comenzando. Queremos crecer junto a la comunidad pescadora, con atención directa y cercana.', 'yasofish-storefront' ); ?></p>
 			<div class="yf-hero__actions">
 				<a class="button" href="<?php echo esc_url( $shop_url ); ?>"><?php echo esc_html( $hero_button ); ?> <span aria-hidden="true">↗</span></a>
 				<?php yasofish_storefront_whatsapp_button( __( 'Hola YASOFISH, necesito asesoría para mi próxima salida de pesca.', 'yasofish-storefront' ), __( 'Necesito asesoría', 'yasofish-storefront' ) ); ?>
@@ -27,7 +28,7 @@ $logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'medium' ) : get_t
 	</section>
 
 	<?php if ( ! class_exists( 'WooCommerce' ) ) : ?>
-		<p class="yf-config-note"><?php esc_html_e( 'Instala y activa WooCommerce para mostrar categorías, productos, bolsa y compra.', 'yasofish-storefront' ); ?></p>
+		<p class="yf-config-note"><?php esc_html_e( 'Instala y activa WooCommerce para mostrar categorías, productos, carro y compra.', 'yasofish-storefront' ); ?></p>
 	<?php else : ?>
 		<section aria-labelledby="yf-categories-title">
 			<h2 class="yf-section-title" id="yf-categories-title"><?php esc_html_e( 'Encuentra tu equipo', 'yasofish-storefront' ); ?></h2>
