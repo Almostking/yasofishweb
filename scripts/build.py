@@ -12,7 +12,7 @@ for path in sorted(THEME.rglob('*.js')):
     subprocess.run(['node', '--check', str(path)], check=True)
 assert 'Template: storefront' in (THEME/'style.css').read_text(encoding='utf-8-sig')
 assert (THEME/'screenshot.png').is_file(), 'Missing theme preview'
-files = sorted(p for p in THEME.rglob('*') if p.is_file() and p.suffix in {'.php','.css','.js','.png','.svg','.md','.txt'})
+files = sorted((p for p in THEME.rglob('*') if p.is_file() and p.suffix in {'.php','.css','.js','.png','.svg','.md','.txt'}), key=lambda p: p.relative_to(ROOT).as_posix())
 for p in files:
     if p.suffix == '.svg':
         svg = ET.fromstring(p.read_text(encoding='utf-8-sig'))
@@ -27,6 +27,7 @@ with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
     for p in files:
         entry = zipfile.ZipInfo(p.relative_to(ROOT).as_posix(), (2026,1,1,0,0,0))
         entry.compress_type = zipfile.ZIP_DEFLATED
+        entry.create_system = 3
         entry.external_attr = 0o100644 << 16
         data = p.read_bytes()
         # Git checkouts may use CRLF on Windows; package text identically on CI.
