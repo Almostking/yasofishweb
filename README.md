@@ -1,5 +1,7 @@
 # YASOFISH Chile
 
+La migración visual de la maqueta al tema hijo y sus capturas equivalentes están en [el informe visual 1.2.1](docs/MIGRACION-VISUAL-1.2.1.md). El diseño conserva las funciones nativas WooCommerce y el carrito clásico; no importa productos ni precios de demostración.
+
 Código de la tienda para WordPress, WooCommerce y el tema Storefront. Revisión correctiva 1.2.1.
 
 Validar y crear ZIP: `python scripts/build.py` (PHP 8.3, Node, Python). Entrega local en `outputs/yasofish-storefront-child-1.2.1.zip` con SHA256. Consulta [operación, actualizaciones y rollback](docs/OPERACION.md), [historial](CHANGELOG.md) e [informe real de ejecución](docs/INFORME-1.2.1.md).

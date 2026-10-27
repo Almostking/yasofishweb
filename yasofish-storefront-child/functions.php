@@ -350,3 +350,5 @@ function yasofish_storefront_menu_fallback( $args ) {
     }
     echo '</ul></div>';
 }
+
+require_once get_stylesheet_directory() . '/template-parts/visual.php';

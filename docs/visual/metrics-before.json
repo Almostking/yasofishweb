@@ -1,0 +1,164 @@
+[
+  {
+    "name": "reference",
+    "width": 1440,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 63,
+      "width": 1440,
+      "height": 124,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 237,
+      "width": 1440,
+      "height": 658.640625,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 2279.828125,
+      "width": 1440,
+      "height": 638.921875,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "reference",
+    "width": 768,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 63,
+      "width": 768,
+      "height": 124,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 237,
+      "width": 768,
+      "height": 674.5625,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 2837.34375,
+      "width": 768,
+      "height": 874.6875,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "reference",
+    "width": 390,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 72,
+      "width": 390,
+      "height": 175,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 293,
+      "width": 390,
+      "height": 748.09375,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 3049.875,
+      "width": 390,
+      "height": 1133.859375,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "before",
+    "width": 1440,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 33.90625,
+      "width": 1440,
+      "height": 160.265625,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "hero": {
+      "x": 43.1875,
+      "y": 281.125,
+      "width": 1353.625,
+      "height": 785.671875,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 1905.859375,
+      "width": 1440,
+      "height": 565.71875,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "before",
+    "width": 768,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 27.78125,
+      "width": 768,
+      "height": 198.390625,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "hero": {
+      "x": 23.03125,
+      "y": 313.125,
+      "width": 721.9375,
+      "height": 633.375,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 1780.375,
+      "width": 768,
+      "height": 692.328125,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "before",
+    "width": 390,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 27.78125,
+      "width": 390,
+      "height": 85.875,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "hero": {
+      "x": 16,
+      "y": 200.609375,
+      "width": 358,
+      "height": 777.453125,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 2073.40625,
+      "width": 390,
+      "height": 818.6875,
+      "font": "\"Source Sans Pro\", HelveticaNeue-Light, \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif"
+    },
+    "errors": []
+  }
+]

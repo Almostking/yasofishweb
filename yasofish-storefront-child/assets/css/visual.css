@@ -1,0 +1,503 @@
+/* Derived from the original repository style.css + brand.css; scoped to YASOFISH. */
+.yf-design{--ink:#142d2a;--green:#183e34;--lime:#d4f568;--cream:#f7f7ef;--muted:#69716b}
+.yf-design *{box-sizing:border-box}
+.yf-design{margin:0;color:var(--ink);background:#fff;font-family:'DM Sans',Arial,sans-serif}
+.yf-design a{color:inherit;text-decoration:none}
+.yf-design button,.yf-design input,.yf-design select{font:inherit}
+.yf-design button,.yf-design a,.yf-design input,.yf-design select{ -webkit-tap-highlight-color:transparent}
+.yf-design button{cursor:pointer}
+.yf-design button:focus-visible,.yf-design a:focus-visible{outline:3px solid #a0bc43;outline-offset:4px}
+.yf-design .topline{background:var(--green);color:#fff;display:flex;justify-content:space-between;padding:9px 6%;font-size:10px;letter-spacing:1.4px}
+.yf-design .yf-masthead{padding:24px 6%;display:flex;align-items:center;gap:60px}
+.yf-design .logo{font-size:29px;font-weight:800;letter-spacing:-1.4px;white-space:nowrap}
+.yf-design .logo>span:not(.fish){color:#6a8a45}
+.yf-design .logo small{display:block;font-size:8px;letter-spacing:2px;text-align:right}
+.yf-design .cartlink{margin-left:auto;font-size:13px;white-space:nowrap}
+.yf-design .cartlink span{background:var(--lime);border-radius:50%;padding:4px 8px;margin:5px}
+.yf-design .yf-masthead form{display:flex;background:#f5f6f2;border:1px solid #e3e6df;max-width:510px;flex:1}
+.yf-design .yf-masthead input{border:0;background:none;width:100%;padding:13px;font-size:12px}
+.yf-design .yf-masthead button{border:0;background:none;font-size:25px;padding:0 15px}
+.yf-design .yf-primary-nav{display:flex;gap:34px;border-top:1px solid #eee;border-bottom:1px solid #eee;padding:15px 6%;font-size:12px;font-weight:600}
+.yf-design .yf-primary-nav button{margin-left:auto;border:0;background:none;color:var(--green);font-size:12px}
+.yf-design .hero{position:relative;min-height:530px;background:#273b32;overflow:hidden;color:#fff;display:flex;align-items:center}
+.yf-design .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,30,23,.85),rgba(8,30,23,.15)),url('../images/patagonia.svg') center 54%/cover}
+.yf-design .hero:after{content:'PATAGONIA / ESPÍRITU DE EXPLORACIÓN';position:absolute;right:5%;bottom:30px;font-size:9px;letter-spacing:2px}
+.yf-design .herocopy{position:relative;padding:65px 8%;max-width:780px}
+.yf-design .eyebrow{text-transform:uppercase;letter-spacing:2.4px;font-size:10px;font-weight:700}
+.yf-design .herocopy .eyebrow{color:var(--lime)}
+.yf-design h1,.yf-design h2,.yf-design h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;margin:0;line-height:1}
+.yf-design h1{font-size:76px;font-weight:700;text-transform:uppercase;letter-spacing:-1px}
+.yf-design h1 em{font-style:normal;color:var(--lime)}
+.yf-design .herocopy p{max-width:370px;font-size:14px;line-height:1.7;color:#e1e6df}
+.yf-design .btn{display:inline-block;padding:15px 24px;background:var(--green);color:#fff;border:0;font-size:12px;font-weight:700;text-align:center}
+.yf-design .btn.lime{background:var(--lime);color:var(--ink)}
+.yf-design .btn.outline{border:1px solid #bec8bd;background:transparent;color:var(--ink)}
+.yf-design .hero .btn.outline{color:white;margin-left:12px;border-color:#a8b6aa}
+.yf-design .benefits{display:grid;grid-template-columns:repeat(3,1fr);background:var(--cream);padding:25px 8%;gap:30px;border-bottom:1px solid #e6e8df}
+.yf-design .benefits div{font-size:12px;display:flex;align-items:center;gap:15px}
+.yf-design .benefits b{font-size:23px;font-weight:400}
+.yf-design .benefits small{display:block;color:var(--muted);font-size:10px;margin-top:4px}
+.yf-design .section{padding:58px 6%;max-width:1600px;margin:auto}
+.yf-design .heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}
+.yf-design h2{font-size:42px;text-transform:uppercase}
+.yf-design .heading .eyebrow{color:#788267;margin-bottom:10px}
+.yf-design .textlink{font-size:12px;text-decoration:underline;text-underline-offset:5px}
+.yf-design .categories{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.yf-design .category{position:relative;background:#eef0e8;padding:20px 25px;overflow:hidden;min-height:180px}
+.yf-design .category:nth-child(even){background:#e8ece5}
+.yf-design .category svg{position:absolute;right:-15px;top:0;width:75%;height:150px;transform:rotate(-16deg)}
+.yf-design .category strong{position:absolute;bottom:22px;left:23px;font-family:'Barlow Condensed',sans-serif;font-size:26px;text-transform:uppercase}
+.yf-design .category span{position:absolute;right:20px;bottom:24px}
+.yf-design .products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.yf-design .product{min-width:0}
+.yf-design .productimage{position:relative;background:#f3f4ef;height:225px;display:block;overflow:hidden}
+.yf-design .productimage svg{width:100%;height:100%;transition:transform .3s}
+.yf-design .productimage:hover svg{transform:scale(1.07)}
+.yf-design .badge{position:absolute;top:12px;left:12px;background:white;padding:5px 8px;font-size:9px;font-weight:bold}
+.yf-design .badge.sale{background:var(--lime)}
+.yf-design .product small{display:block;color:var(--muted);font-size:9px;letter-spacing:1px;margin:17px 0 8px}
+.yf-design .product h3{font-family:inherit;font-size:14px;line-height:1.5;font-weight:600}
+.yf-design .price{margin:10px 0 15px;font-size:17px;font-weight:700}
+.yf-design .price del{font-size:12px;color:#8c9289;font-weight:400;margin-left:7px}
+.yf-design .product button{background:transparent;border:1px solid #cbd2c4;width:100%;padding:11px;font-size:11px;color:var(--green)}
+.yf-design .product button:hover{background:var(--green);color:white}
+.yf-design .editorial{margin:20px 6% 60px;background:var(--green);color:white;display:grid;grid-template-columns:1fr 1fr;min-height:270px}
+.yf-design .editorial .art{background:linear-gradient(45deg,#58736666,#182e2a66),url('../images/patagonia.svg') center/cover}
+.yf-design .editorial .copy{padding:45px}
+.yf-design .editorial h2{font-size:40px;margin:12px 0}
+.yf-design .editorial p{font-size:12px;line-height:1.8;color:#c5d0c7}
+.yf-design .yf-footer{background:#f1f2eb;padding:45px 6%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:25px}
+.yf-design .yf-footer p{font-size:13px;line-height:1.7}
+.yf-design .yf-footer div{display:flex;flex-direction:column;gap:15px;font-size:12px}
+.yf-design .yf-footer button{border:0;background:none;text-align:left;padding:0;color:inherit}
+.yf-design .yf-footer small{grid-column:1/-1;border-top:1px solid #d7ddcf;padding-top:25px;font-size:10px;color:var(--muted);line-height:1.8}
+.yf-design .floating{position:fixed;right:25px;bottom:24px;border:0;border-radius:40px;background:var(--green);color:white;padding:15px 20px;box-shadow:0 4px 20px #0002;z-index:5;font-size:12px}
+@media(min-width:1500px){
+.yf-design .hero{min-height:610px}
+}
+@media(max-width:900px){
+.yf-design .yf-masthead{gap:25px}
+.yf-design .yf-primary-nav{gap:20px;overflow:auto;white-space:nowrap}
+.yf-design .products{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+.yf-design .topline span:last-child{display:none}
+.yf-design .yf-masthead{padding:18px 5%;flex-wrap:wrap;gap:15px}
+.yf-design .logo{font-size:25px}
+.yf-design .yf-masthead form{order:3;flex-basis:100%;max-width:none}
+.yf-design .yf-primary-nav{padding:13px 5%;gap:25px}
+.yf-design .yf-primary-nav button{display:none}
+.yf-design .hero{min-height:470px}
+.yf-design .herocopy{padding:45px 6%}
+.yf-design h1{font-size:55px}
+.yf-design .hero .btn{padding:14px 16px}
+.yf-design .hero .btn.outline{margin-left:4px}
+.yf-design .hero:after{font-size:7px}
+.yf-design .benefits{padding:22px 5%;gap:14px}
+.yf-design .benefits div{font-size:10px;gap:8px}
+.yf-design .benefits b{display:none}
+.yf-design .benefits small{font-size:9px}
+.yf-design .section{padding:38px 5%}
+.yf-design h2{font-size:33px}
+.yf-design .heading{gap:15px}
+.yf-design .textlink{font-size:10px}
+.yf-design .categories{grid-template-columns:repeat(2,1fr);gap:10px}
+.yf-design .category{min-height:155px}
+.yf-design .category strong{font-size:23px}
+.yf-design .products{gap:15px}
+.yf-design .productimage{height:180px}
+.yf-design .product h3{font-size:12px}
+.yf-design .editorial{grid-template-columns:1fr;margin:0 5% 35px}
+.yf-design .editorial .art{height:180px}
+.yf-design .editorial .copy{padding:30px}
+.yf-design .yf-footer{grid-template-columns:1fr 1fr}
+.yf-design .yf-footer>div{grid-column:1/-1}
+.yf-design .floating{right:15px;bottom:15px;padding:13px}
+.yf-design .floating span{display:none}
+}
+.yf-design .sme-note{max-width:40rem;margin:1rem 0 1.25rem;padding:.75rem 1rem;border-left:3px solid var(--lime);background:#071f3899;color:#f2f7fa;font-size:.92rem;line-height:1.55}
+.yf-design .yf-email-link{display:block;margin:.55rem 0;font-weight:650;overflow-wrap:anywhere}
+.yf-design{--ink:#071f40;--green:#075ba9;--lime:#ffe044;--cream:#f0f7fc;--muted:#586e83;--blue:#087fd0;--navy:#041c3d;--cyan:#39c5f6}
+.yf-design{background:#fff}
+.yf-design button:focus-visible,.yf-design a:focus-visible{outline-color:#089ee7}
+.yf-design .topline{background:var(--navy)}
+.yf-design .yf-masthead{padding:12px 6%;gap:48px}
+.yf-design .logo{display:flex;align-items:center;gap:12px;letter-spacing:0}
+.yf-design .logo img{object-fit:contain;flex-shrink:0}
+.yf-design .brandcopy b{display:block;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-style:italic;font-weight:800;font-size:33px;line-height:.9;letter-spacing:-.4px;color:#064e92}
+.yf-design .brandcopy b span{display:block;font-size:15px;letter-spacing:6px;color:#071f40;margin-top:7px}
+.yf-design .logo .brandcopy small{font-size:8px;letter-spacing:1.5px;text-align:left;margin-top:9px;color:#48667d}
+.yf-design .yf-masthead form{background:#f3f8fc;border-color:#d9e7f1;max-width:550px}
+.yf-design .cartlink{font-weight:700}
+.yf-design .cartlink span{background:#e1f2ff;color:#075ba9}
+.yf-design .yf-primary-nav{background:#065aab;color:white;border:0;padding-top:16px;padding-bottom:16px;gap:36px}
+.yf-design .yf-primary-nav a{position:relative}
+.yf-design .yf-primary-nav a:hover{color:var(--lime)}
+.yf-design .yf-primary-nav button{color:white}
+.yf-design .yf-primary-nav i{color:#ffe044}
+.yf-design .yf-primary-nav a[href*="oferta"]{color:#ffe044}
+.yf-design .hero{background:radial-gradient(ellipse at 78% 42%,#0a8bd8 0,#064a99 40%,#031d46 83%);min-height:570px;isolation:isolate;align-items:stretch}
+.yf-design .hero:before{background:repeating-radial-gradient(ellipse at 85% 120%,transparent 0 40px,#29c3ff12 42px 44px,transparent 46px 80px);transform:rotate(-9deg) scale(1.2);z-index:-1}
+.yf-design .hero:after{content:'';width:65%;height:150px;right:-10%;bottom:-100px;background:#0ba1e5;transform:rotate(-10deg);box-shadow:0 -12px 0 #35c7f333,0 -25px 0 #35c7f312;z-index:-1}
+.yf-design .herocopy{width:54%;max-width:820px;padding:78px 0 60px 6%;z-index:2}
+.yf-design .herocopy .eyebrow{color:#8bdfff;background:#021f4e77;display:inline-block;border-left:3px solid #ffe044;padding:9px 12px;letter-spacing:2px}
+.yf-design .herocopy h1{font-weight:800;font-style:italic;font-size:86px;line-height:.94;letter-spacing:-1px;margin:24px 0;text-shadow:3px 4px 0 #001639;-webkit-text-stroke:.5px #fff}
+.yf-design .herocopy h1 em{color:#ffe044;-webkit-text-stroke:.5px #ffe044}
+.yf-design .herocopy p{color:#d9eeff;max-width:400px;font-size:14px;margin-bottom:25px}
+.yf-design .heroactions{display:flex;gap:12px;flex-wrap:wrap}
+.yf-design .hero .btn{padding:16px 23px;font-size:11px;border-radius:4px}
+.yf-design .hero .btn.lime{box-shadow:0 4px 0 #ccaa15}
+.yf-design .hero .btn.outline{margin-left:0;border-color:#80c3f0;background:#012a5f55}
+.yf-design .hero .btn.outline:hover{background:#0964ae}
+.yf-design .herotrust{display:flex;gap:18px;margin-top:33px;color:#9accef;font-size:8px;font-weight:700;letter-spacing:1px}
+.yf-design .herotrust span+span{border-left:1px solid #4486b1;padding-left:18px}
+.yf-design .promo-art{width:46%;position:relative;display:flex;align-items:center;flex-direction:column;justify-content:center;padding:35px 5% 60px 10px}
+.yf-design .brandseal{position:absolute;top:32px;right:12%;transform:rotate(8deg);z-index:3}
+.yf-design .brandseal img{width:128px;height:128px;background:white;border-radius:50%;box-shadow:0 8px 30px #001f5666;border:4px solid white}
+.yf-design .promotitle{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-style:italic;font-weight:800;font-size:54px;line-height:.93;text-shadow:3px 3px 0 #001328,-2px -2px 0 #001328,2px -2px 0 #001328;transform:rotate(-7deg);align-self:flex-start;margin:75px 0 0 0;z-index:4;color:white;white-space:nowrap}
+.yf-design .promotitle span{font-size:46px;color:#6bddff}
+.yf-design .promoitems{position:relative;width:100%;height:215px}
+.yf-design .promoequipment{position:absolute;width:78%;left:-8%;top:-30px;transform:rotate(-16deg);filter:drop-shadow(0 15px 9px #011d4a66)}
+.yf-design .promolure{position:absolute;width:84%;right:-10%;top:8px;transform:rotate(-20deg);filter:drop-shadow(0 14px 8px #011d4a77)}
+.yf-design .promoitems svg{width:100%;height:auto}
+.yf-design .promoribbon{position:relative;align-self:center;background:#ffdf32;color:#071d3c;font:800 italic 26px 'Barlow Condensed','Arial Narrow',sans-serif;transform:rotate(-5deg);padding:9px 25px;box-shadow:5px 5px 0 #df2636;text-align:center;margin-top:-20px;z-index:5}
+.yf-design .promoribbon small{display:block;font:700 9px 'DM Sans',Arial,sans-serif;letter-spacing:2px;margin-top:3px}
+.yf-design .benefits{background:#f0f7fc;border-color:#dceaf5}
+.yf-design .benefits b{color:#0877bd}
+.yf-design .heading .eyebrow{color:#137bc0}
+.yf-design h2{color:#082e58;font-style:italic;font-weight:700}
+.yf-design .category{background:linear-gradient(135deg,#eaf6ff,#d7eafd);border:1px solid #e1edf5}
+.yf-design .category:nth-child(even){background:linear-gradient(135deg,#f0f8fd,#e2f0fa)}
+.yf-design .category strong{color:#075ca9;font-style:italic;font-weight:800}
+.yf-design .category span{color:#0782cf}
+.yf-design .productimage{background:radial-gradient(ellipse at center,#fff 0,#edf6fc 100%);border:1px solid #e7eff6}
+.yf-design .product button{border-color:#b8d6ed;color:#075ba9;font-weight:700;border-radius:3px}
+.yf-design .product button:hover{background:#075ba9}
+.yf-design .product .price{color:#064c8e}
+.yf-design .badge{color:#175981}
+.yf-design .badge.sale{color:#172e49;background:#ffe044;box-shadow:2px 2px 0 #dc2636}
+.yf-design .editorial{background:linear-gradient(125deg,#031c3e,#0765b6);overflow:hidden}
+.yf-design .editorial h2{color:white}
+.yf-design .editorial p{color:#d6eaff}
+.yf-design .editorial .art{background:linear-gradient(50deg,#052c68cc,#008ee833),url('../images/patagonia.svg') center/cover;filter:hue-rotate(63deg)}
+.yf-design .editorial .eyebrow{color:#73d6ff}
+.yf-design .btn{border-radius:3px}
+.yf-design .btn.lime{background:#ffe044;color:#10294d}
+.yf-design .btn.outline{border-color:#a6c7e2}
+.yf-design .yf-footer{background:#061d3b;color:#d9e9f6}
+.yf-design .yf-footer p{color:#adcee8}
+.yf-design .yf-footer small{border-color:#1c3e60;color:#91aec7}
+.yf-design .floating{background:#0868ae;border:1px solid #5acbff}
+@media(min-width:1500px){
+.yf-design .hero{min-height:610px}
+.yf-design .herocopy{padding-top:90px}
+.yf-design .promotitle{font-size:62px}
+.yf-design .promotitle span{font-size:50px}
+.yf-design .brandseal img{width:150px;height:150px}
+}
+@media(max-width:1000px){
+.yf-design .yf-masthead{gap:24px}
+.yf-design .brandcopy{display:none}
+.yf-design .hero{min-height:530px}
+.yf-design .herocopy{padding-top:65px;width:55%}
+.yf-design .herocopy h1{font-size:69px}
+.yf-design .promo-art{width:45%;padding-right:5%}
+.yf-design .promotitle{font-size:43px}
+.yf-design .promotitle span{font-size:35px}
+.yf-design .brandseal img{width:105px;height:105px}
+.yf-design .promoitems{height:180px}
+.yf-design .promoribbon{font-size:22px;padding:9px 15px}
+.yf-design .hero .btn{padding:14px}
+.yf-design .herotrust{gap:10px;font-size:7px}
+.yf-design .herotrust span+span{padding-left:10px}
+}
+@media(max-width:600px){
+.yf-design .yf-masthead{padding:8px 5%;gap:10px}
+.yf-design .logo img{width:76px;height:76px}
+.yf-design .brandcopy{display:block}
+.yf-design .brandcopy b{font-size:26px}
+.yf-design .brandcopy b span{font-size:11px;letter-spacing:5px}
+.yf-design .logo .brandcopy small{font-size:6px;letter-spacing:1px}
+.yf-design .yf-masthead form{margin-bottom:6px}
+.yf-design .cartlink{font-size:11px}
+.yf-design .yf-primary-nav{gap:25px}
+.yf-design .hero{display:block;min-height:0}
+.yf-design .herocopy{width:100%;padding:40px 6% 0;max-width:none}
+.yf-design .herocopy .eyebrow{font-size:8px;letter-spacing:1.8px}
+.yf-design .herocopy h1{font-size:66px;margin:20px 0}
+.yf-design .herocopy p{font-size:13px;max-width:320px;margin-bottom:20px}
+.yf-design .heroactions{gap:10px}
+.yf-design .hero .btn{font-size:10px;padding:14px 18px}
+.yf-design .herotrust{margin-top:25px;font-size:7px;gap:13px}
+.yf-design .herotrust span+span{padding-left:13px}
+.yf-design .promo-art{width:100%;height:315px;padding:10px 10% 35px;max-width:450px;margin:auto}
+.yf-design .brandseal{top:22px;right:12%}
+.yf-design .brandseal img{width:103px;height:103px}
+.yf-design .promotitle{font-size:38px;align-self:flex-start;margin:25px 0 0;line-height:.95}
+.yf-design .promotitle span{font-size:32px}
+.yf-design .promoitems{height:150px;width:90%;margin-top:-8px}
+.yf-design .promoequipment{width:67%;left:-5%;top:-15px}
+.yf-design .promolure{width:70%;right:-5%;top:0}
+.yf-design .promoribbon{font-size:20px;margin-top:-10px;padding:8px 20px}
+.yf-design .promoribbon small{font-size:7px}
+.yf-design .hero:after{width:100%}
+.yf-design .benefits{gap:15px;padding-top:20px;padding-bottom:20px}
+.yf-design .editorial .art{height:155px}
+.yf-design .yf-footer .logo{align-self:start}
+.yf-design .heading{align-items:center}
+.yf-design .heading h2{font-size:30px}
+.yf-design .heading .eyebrow{font-size:8px;line-height:1.5}
+}
+@media(max-width:600px){
+.yf-design .herocopy h1{font-size:clamp(48px,14vw,66px)}
+.yf-design .promo-art .brandseal{display:none}
+.yf-design .promo-art{height:290px}
+.yf-design .promotitle{align-self:center;margin-top:22px}
+.yf-design .promoitems{width:95%}
+}
+.yf-design .accountlink{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid #c5dcee;border-radius:4px;color:#075ba9;font-size:11px;font-weight:700;white-space:nowrap}
+.yf-design .accountlink:hover{background:#edf7fd;color:#063f78}
+.yf-design .accountlink>span:first-child{font-size:20px}
+.yf-design .accountlink small{display:block;color:#647d91;font-size:9px;font-weight:500;margin-top:2px}
+.yf-design .accountlink{flex-shrink:0}
+@media(max-width:600px){
+.yf-design .accountlink{padding:6px 7px;font-size:10px;gap:4px}
+.yf-design .accountlink>span:first-child{display:none}
+.yf-design .accountlink small{font-size:8px}
+}
+.yf-design .yf-footer{margin-top:0;padding:42px 5% 18px;background:linear-gradient(165deg,#082b57,#051b3a 72%);color:#e2f0fb}
+.yf-design .yf-footer-inner{max-width:1450px;margin:0 auto}
+.yf-design .yf-footer a{color:#c3e3f8}
+.yf-design .yf-footer a:hover{color:#ffe044}
+.yf-design .yf-footer-top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 0 28px;border-bottom:1px solid #ffffff24}
+.yf-design .yf-footer-top .logo{color:#fff}
+.yf-design .yf-footer-top .brandcopy b{color:#fff}
+.yf-design .yf-footer-top .brandcopy b span,.yf-design .yf-footer-top .logo .brandcopy small{color:#a9d8f5}
+.yf-design .yf-footer-top>p{margin:0;color:#fff;font-weight:700;line-height:1.7}
+.yf-design .yf-footer-top>p span{color:#a9c5dc;font-size:12px;font-weight:400}
+.yf-design .yf-social{display:flex;align-items:center;gap:11px}
+.yf-design .yf-instagram{display:grid;width:38px;height:38px;place-items:center;border:1px solid #ffffff4a;border-radius:50%;font-size:25px}
+.yf-design .yf-social small,.yf-design .yf-social strong{display:block}
+.yf-design .yf-social small{font-size:9px;letter-spacing:1px}
+.yf-design .yf-social strong{margin-top:3px}
+.yf-design .yf-footer-columns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;padding:30px 0}
+.yf-design .yf-footer-columns section{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.yf-design .yf-footer-columns h3,.yf-design .yf-footer-payments h3{margin:0 0 5px;color:#fff;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.yf-design .yf-footer-columns a,.yf-design .yf-footer-columns button,.yf-design .yf-footer-columns p{margin:0;color:#c3d5e6;font-size:12px;line-height:1.55}
+.yf-design .yf-footer-columns button{padding:0;border:0;background:none;text-align:left}
+.yf-design .yf-footer-columns p{color:#9bb3c8}
+.yf-design .yf-location{display:flex;gap:10px}
+.yf-design .yf-location>span:first-child{color:#ffe044;font-size:24px}
+.yf-design .yf-location strong{color:#ffe044}
+.yf-design .yf-footer-cta{margin-top:3px!important;color:#fff!important;font-weight:700}
+.yf-design .yf-footer-payments{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:21px 0;border-top:1px solid #ffffff24;border-bottom:1px solid #ffffff24}
+.yf-design .yf-footer-payments>div:first-child small{color:#9bb3c8;font-size:10px}
+.yf-design .yf-payment-list{display:flex;flex-wrap:wrap;gap:9px}
+.yf-design .yf-payment-list>span{display:flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid #ffffff35;border-radius:4px;background:#ffffff0c;color:#e2f0fb;font-size:11px}
+.yf-design .yf-payment-list b{display:grid;min-width:25px;height:22px;place-items:center;border-radius:3px;background:#fff;color:#075ba9;font-size:9px}
+.yf-design .yf-payment-list small{color:#ffe044;font-size:8px;text-transform:uppercase}
+.yf-design .yf-footer-bottom{display:flex;justify-content:space-between;gap:18px;padding-top:17px;color:#9bb3c8;font-size:10px}
+@media(max-width:850px){
+.yf-design .yf-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))}
+.yf-design .yf-footer-payments{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:560px){
+.yf-design .yf-footer{padding:32px 5% 16px}
+.yf-design .yf-footer-top{align-items:flex-start;flex-wrap:wrap}
+.yf-design .yf-footer-top>p{order:3;flex-basis:100%}
+.yf-design .yf-footer-columns{gap:26px 18px}
+.yf-design .yf-footer-columns section{gap:8px}
+.yf-design .yf-footer-columns h3{font-size:11px}
+.yf-design .yf-footer-columns a,.yf-design .yf-footer-columns button,.yf-design .yf-footer-columns p{font-size:11px}
+.yf-design .yf-payment-list{gap:6px}
+.yf-design .yf-payment-list>span{padding:7px 8px;font-size:9px}
+.yf-design .yf-footer-bottom{flex-direction:column;gap:5px}
+}
+.yf-design .yf-footer{display:block!important;width:100%;grid-template-columns:none}
+.yf-design .yf-footer>.yf-footer-inner{display:block;width:100%;grid-column:1/-1}
+.yf-design .yf-footer-columns{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));width:100%}
+@media(max-width:850px){
+.yf-design .yf-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:560px){
+.yf-design .yf-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+.yf-design .yf-footer{display:block!important;width:100%;grid-template-columns:none!important}
+.yf-design .yf-footer>.yf-footer-inner{display:block!important;width:100%!important;grid-column:1/-1}
+.yf-design .yf-footer-columns{display:flex!important;flex-flow:row nowrap!important;align-items:flex-start;width:100%}
+.yf-design .yf-footer-columns section{flex:1 1 0;min-width:0}
+.yf-design .yf-footer-top{width:100%}
+.yf-design .yf-footer-top .yf-brand-icon{width:30px;height:30px;display:block}
+.yf-design .yf-footer-top .yf-instagram-mark{width:34px;height:34px}
+.yf-design .yf-footer-columns button[data-wa]{display:flex;align-items:center;gap:8px}
+.yf-design .yf-whatsapp-mark{width:20px;height:20px;color:#25d366}
+.yf-design .yf-location-mark{flex:0 0 22px;width:22px;height:22px;margin-top:2px}
+.yf-design .yf-payment-list>span{gap:10px}
+.yf-design .yf-payment-list>span small{padding-left:8px;border-left:1px solid #ffffff35}
+@media(max-width:850px){
+.yf-design .yf-footer-columns{flex-flow:row wrap!important}
+.yf-design .yf-footer-columns section{flex:1 1 calc(50% - 18px)}
+.yf-design .yf-footer-payments{flex-direction:row!important;flex-wrap:wrap}
+}
+@media(max-width:560px){
+.yf-design .yf-footer-columns{flex-flow:row wrap!important}
+.yf-design .yf-footer-columns section{flex:1 1 calc(50% - 12px)}
+.yf-design .yf-footer-payments{align-items:flex-start;flex-direction:row!important;flex-wrap:wrap}
+.yf-design .yf-footer-top .yf-instagram-mark{width:30px;height:30px}
+}
+.yf-design .yf-footer{display:block!important;width:100%;grid-template-columns:none!important}
+.yf-design .yf-footer>.yf-footer-inner{display:block!important;width:100%!important;grid-column:1/-1}
+.yf-design .yf-footer-columns{display:flex!important;flex-flow:row nowrap!important;align-items:flex-start;width:100%}
+.yf-design .yf-footer-columns section{flex:1 1 0;min-width:0}
+.yf-design .yf-footer-top{width:100%}
+.yf-design .yf-footer-top .yf-brand-icon{width:30px;height:30px;display:block}
+.yf-design .yf-footer-top .yf-instagram-mark{width:34px;height:34px}
+.yf-design .yf-footer-columns button[data-wa]{display:flex;align-items:center;gap:8px}
+.yf-design .yf-whatsapp-mark{width:20px;height:20px;color:#25d366}
+.yf-design .yf-location-mark{flex:0 0 22px;width:22px;height:22px;margin-top:2px}
+.yf-design .yf-payment-list>span{gap:10px}
+.yf-design .yf-payment-list>span small{padding-left:8px;border-left:1px solid #ffffff35}
+.yf-design .yf-footer-payments{flex-direction:row!important;flex-wrap:wrap}
+@media(max-width:850px){
+.yf-design .yf-footer-columns{flex-flow:row wrap!important}
+.yf-design .yf-footer-columns section{flex:1 1 calc(50% - 18px)}
+}
+@media(max-width:560px){
+.yf-design .yf-footer-columns{flex-flow:row wrap!important}
+.yf-design .yf-footer-columns section{flex:1 1 calc(50% - 12px)}
+.yf-design .yf-footer-payments{align-items:flex-start;flex-direction:row!important;flex-wrap:wrap}
+.yf-design .yf-footer-top .yf-instagram-mark{width:30px;height:30px}
+}
+.yf-design .yf-footer-top{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;padding-bottom:24px!important}
+.yf-design .yf-footer-top>p{display:none!important}
+.yf-design .yf-footer-socials{display:flex;flex-flow:row nowrap;align-items:center;gap:16px;color:#a9c5dc;font-size:10px;font-weight:700;letter-spacing:.12em}
+.yf-design .yf-footer-socials a,.yf-design .yf-footer-wa{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:1px solid #ffffff45;border-radius:50%;background:transparent;color:#c3e3f8;cursor:pointer}
+.yf-design .yf-footer-socials a:hover,.yf-design .yf-footer-wa:hover{background:#ffffff12;color:#fff}
+.yf-design .yf-footer-socials .yf-brand-icon{display:block;width:20px;height:20px}
+.yf-design .yf-footer-socials .yf-whatsapp-mark{color:#25d366}
+.yf-design .yf-footer-payments{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important;gap:24px!important}
+.yf-design .yf-payment-list{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;gap:9px!important}
+.yf-design .yf-payment-list>span{white-space:nowrap}
+.yf-design .yf-footer-bottom{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important}
+@media(max-width:850px){
+.yf-design .yf-footer-payments{flex-wrap:wrap!important}
+.yf-design .yf-payment-list{flex-wrap:wrap!important}
+}
+@media(max-width:560px){
+.yf-design .yf-footer-top{flex-wrap:wrap!important}
+.yf-design .yf-footer-payments,.yf-design .yf-footer-bottom{flex-wrap:wrap!important;gap:12px!important}
+.yf-design .yf-footer-socials{gap:10px}
+.yf-design .yf-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+.yf-design .yf-footer-payments small{border:0!important;grid-column:auto!important;padding:0!important;line-height:1.2!important}
+.yf-design .yf-payment-list>span{min-height:0!important;line-height:1.2!important}
+.yf-design .floating .yf-whatsapp-mark{width:20px;height:20px;color:#25d366;vertical-align:middle}
+.yf-design .yf-footer-bottom{padding-right:150px!important}
+@media(max-width:850px){
+.yf-design .yf-footer-bottom{padding-right:112px!important;flex-wrap:wrap!important}
+}
+@media(max-width:560px){
+.yf-design .yf-footer-bottom{padding-right:105px!important}
+}
+.yf-design .accountlink>svg{width:19px;height:19px;flex:0 0 19px}
+.yf-design .topline{position:relative;display:flex!important;align-items:center!important;justify-content:center!important;min-height:38px;padding:7px 62px 7px 24px!important;background:#1d6fa8!important;color:#fff!important;font-size:11px!important;letter-spacing:0!important}
+.yf-design .announcement{display:flex;align-items:center;justify-content:center;gap:10px;min-width:0;max-width:100%}
+.yf-design .announcement-label{flex:0 0 auto;color:#ffe044;font-size:10px;font-weight:800;letter-spacing:.06em;white-space:nowrap}
+.yf-design .announcement-message{display:inline-block;max-width:min(76vw,850px);overflow:hidden;color:#fff!important;font-size:11px;font-weight:600;text-align:center;text-overflow:ellipsis;white-space:nowrap;transition:opacity .18s ease,transform .18s ease}
+.yf-design .announcement-message:hover{color:#ffe044!important}
+.yf-design .announcement-message.is-changing{opacity:0;transform:translateY(4px)}
+.yf-design .announcement-toggle{position:absolute;right:5.5%;top:50%;width:28px;height:28px;padding:0;transform:translateY(-50%);border:1px solid #ffffff55;border-radius:50%;background:transparent;color:#fff;font-size:12px;line-height:1}
+.yf-design .announcement-toggle:hover{background:#ffffff1c}
+.yf-design .announcement-toggle:focus-visible{outline:2px solid #ffe044;outline-offset:2px}
+@media(max-width:600px){
+.yf-design .topline{min-height:36px;padding:6px 48px 6px 8px!important}
+.yf-design .announcement{justify-content:flex-start;gap:7px;width:100%;overflow:hidden}
+.yf-design .announcement-label{font-size:8px}
+.yf-design .announcement-message{flex:1;max-width:none;font-size:9px;text-align:left}
+.yf-design .announcement-toggle{right:8px;width:25px;height:25px}
+}
+@media(prefers-reduced-motion:reduce){
+.yf-design .announcement-message{transition:none}
+}
+.yf-design .floating{display:inline-flex;align-items:center;justify-content:center;gap:12px;line-height:1;white-space:nowrap}
+.yf-design .floating .yf-brand-icon{display:block;flex:0 0 20px}
+.yf-design .floating span{line-height:1}
+.yf-design .yf-footer-social-label{margin:.45rem 0 .15rem!important;color:#9fc9e6;font-size:10px!important;font-weight:700;letter-spacing:.06em}
+.yf-design .yf-footer-novelty-social{display:flex!important;flex-direction:row!important;align-items:center;flex-wrap:wrap;gap:6px!important;margin:0}
+.yf-design .yf-footer-novelty-social a{display:inline-flex;align-items:center;gap:4px;padding:6px 8px;border:1px solid #ffffff35;border-radius:18px;color:#d8eafa;font-size:10px!important;line-height:1}
+.yf-design .yf-footer-novelty-social a:hover{background:#ffffff14;color:#fff}
+.yf-design .yf-footer-novelty-social .yf-brand-icon{display:block;width:16px;height:16px;flex:0 0 16px}/* Integration boundaries: retain native WooCommerce markup and behavior. */
+.yf-design{font-family:'DM Sans',Arial,sans-serif;font-size:16px;line-height:normal;color:#071f40;background:#fff}
+.yf-design h1,.yf-design h2,.yf-design h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;letter-spacing:normal}
+.yf-design .site{overflow:clip}.yf-design .site-header{padding:0;margin:0;border:0;background:#fff}
+.yf-design .site-header:before,.yf-design .site-header:after,.yf-design .site-footer:before,.yf-design .site-footer:after{display:none}
+.yf-design .site-header>.col-full{max-width:none;padding:0;margin:0}
+.yf-design .site-footer{padding:0;margin:0;background:#051b3a}
+.yf-design .site-footer>.col-full{max-width:none;margin:0;padding:0}
+.yf-design.home .site-content>.col-full{width:100%;max-width:none;margin:0;padding:0}
+.yf-design.home .site-content,.yf-design.home .yf-home-content{padding:0;margin:0;width:100%;float:none}
+.yf-design.home .woocommerce-breadcrumb,.yf-design.home .storefront-breadcrumb{display:none}
+.yf-design .yf-status{text-align:center;background:#edf5fd;color:#4b6279;font:10px Arial,sans-serif;padding:7px;letter-spacing:.4px}
+.yf-design .topline{box-sizing:border-box;min-height:36px;align-items:center;background:#1d6fa8;letter-spacing:.04em}
+.yf-design .announcement-message{color:#fff}.yf-design .announcement-toggle{width:22px;height:22px;padding:0;color:#fff;background:none;border:1px solid #ffffff55;border-radius:50%}
+.yf-design .yf-masthead input{box-shadow:none;outline-offset:0}.yf-design .yf-masthead input[type=hidden]{display:none}
+.yf-design .yf-masthead form{margin:0}.yf-design .yf-masthead button{color:#071f40}
+.yf-design .yf-masthead .accountlink svg{width:20px;height:20px;flex-shrink:0}
+.yf-design .yf-primary-nav{align-items:center;margin:0;overflow-x:auto;white-space:nowrap}
+.yf-design .yf-primary-nav a{color:#fff}.yf-design .yf-primary-nav a:hover{color:#ffe044}
+.yf-design .yf-primary-nav .yf-nav-advice{margin-left:auto;color:#fff;font-size:12px}
+.yf-design .yf-assigned-menu{display:flex;gap:30px;list-style:none;margin:0;padding:0}.yf-design .yf-assigned-menu .sub-menu{padding:10px;list-style:none;background:#075ba9}
+.yf-design .hero h1{color:#fff}.yf-design .hero h1 em{font-style:inherit}
+.yf-design .promoitems img{width:100%;height:auto}.yf-design .hero:after{content:''}
+.yf-design .category img{position:absolute;right:-15px;top:0;width:75%;height:150px;transform:rotate(-16deg);object-fit:contain}
+.yf-design .productimage img{width:100%;height:100%;object-fit:contain;margin:0}
+.yf-design .yf-catalog-note{margin:0 0 20px;font-size:12px;color:#586e83}
+.yf-design .yf-empty-copy{font-size:12px;margin:10px 0 15px;color:#586e83}
+.yf-design .yf-card-action{display:block;border:1px solid #bfd4e6;padding:11px;text-align:center;font-size:11px;color:#075ba9}
+.yf-design .yf-empty-product h3{font:600 14px/1.5 Arial,sans-serif;color:#071f40;margin:0}
+.yf-design .home-featured .woocommerce ul.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:0}
+.yf-design .home-featured .woocommerce ul.products:before,.yf-design .home-featured .woocommerce ul.products:after{display:none}
+.yf-design .home-featured .woocommerce ul.products li.product{float:none;width:auto;margin:0;text-align:left}
+.yf-design .home-featured .woocommerce ul.products li.product img{width:100%;height:225px;object-fit:contain;background:#eff7fc}
+.yf-design .home-featured .woocommerce ul.products li.product h2{font:600 14px/1.5 Arial,sans-serif;text-transform:none;font-style:normal;margin:17px 0 8px}
+.yf-design .home-featured .woocommerce ul.products li.product .button{display:block;border:1px solid #bfd4e6;background:#fff;color:#075ba9;text-align:center;font-size:11px}
+.yf-design .editorial h2{color:#fff}.yf-design .editorial .copy .eyebrow{color:#72d7fa}
+.yf-design .yf-footer .yf-footer-top .brandcopy{display:block}.yf-design .yf-footer .yf-footer-socials{display:flex;flex-direction:row;align-items:center;gap:16px}
+.yf-design .yf-footer-socials .yf-social-name{display:none}.yf-design .yf-footer-socials .yf-social{width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #ffffff45;border-radius:50%}
+.yf-design .yf-footer-socials>span{font-size:10px;letter-spacing:.12em}
+.yf-design .yf-footer .yf-brand-icon{width:20px;height:20px;display:block;flex-shrink:0}
+.yf-design .yf-footer .yf-whatsapp-mark,.yf-design .floating .yf-whatsapp-mark{color:#25d366}
+.yf-design .yf-footer-novelty-social .yf-brand-icon{width:16px;height:16px}
+.yf-design .yf-footer .yf-footer-bottom{padding-right:150px!important;font-size:10px;line-height:1.5}
+.yf-design .floating{display:inline-flex;align-items:center;gap:12px;white-space:nowrap;z-index:50}
+.yf-design .floating .yf-brand-icon{width:20px;height:20px}
+.yf-design .site-content>.col-full{max-width:1400px;margin:auto;padding:35px 6%}
+.yf-design .woocommerce-cart-form,.yf-design .cart-collaterals{font-size:14px}
+.yf-design .storefront-handheld-footer-bar{display:none}
+@media(max-width:1000px){.yf-design .yf-masthead{gap:24px}.yf-design .yf-masthead .brandcopy{display:none}}
+@media(max-width:900px){.yf-design .home-featured .woocommerce ul.products{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.yf-design .yf-masthead .brandcopy{display:block}.yf-design .yf-masthead{flex-wrap:wrap}.yf-design .yf-masthead form{order:3;flex-basis:100%;max-width:none;margin-bottom:6px}.yf-design .yf-masthead .logo img{width:76px;height:76px}.yf-design .yf-primary-nav .yf-nav-advice{display:none}.yf-design .category img{height:150px}.yf-design .home-featured .woocommerce ul.products{gap:15px}.yf-design .yf-footer .yf-footer-bottom{padding-right:0!important}.yf-design .yf-footer .yf-footer-columns section{flex-basis:calc(50% - 12px)}.yf-design .site-content>.col-full{padding:25px 5%}}
+@media(prefers-reduced-motion:reduce){.yf-design *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* Override Storefront's WooCommerce header spacing at equal scope. */
+body.yf-design.woocommerce-active .site-header{margin-bottom:0}
+.yf-design .yf-status{height:27px;display:flex;align-items:center;justify-content:center}
+.yf-design .herotrust span{white-space:nowrap}
+.yf-design .floating{color:#fff;background:#086aae}
+.yf-design .yf-footer .yf-footer-inner .yf-footer-top .brandcopy b{color:#fff}
+@media(max-width:600px){.yf-design .yf-status{height:36px}.yf-design .yf-masthead{gap:10px}}
+.yf-design #masthead.site-header{margin:0!important}
+.yf-design .yf-primary-nav{min-height:50px}
+@media(max-width:600px){.yf-design .yf-primary-nav{min-height:46px}}
+.yf-design #colophon .yf-footer a{color:#c3e3f8}
+.yf-design #colophon .yf-footer a:hover{color:#ffe044}
+.yf-design .footerlogo img{border-radius:50%;background:#fff;object-fit:contain}
+.yf-design #colophon .yf-footer .yf-brand-icon{color:#bcdcf3}
+.yf-design #colophon .yf-footer .yf-whatsapp-mark{color:#25d366}
+@media(max-width:600px){.yf-design .footerlogo img{width:90px;height:90px}}
+.yf-design #page a.floating{color:#fff}
+.yf-design.woocommerce-page .content-area{width:100%;float:none;margin-right:0}
+@media(max-width:600px){.yf-design .category strong{font-size:clamp(18px,5vw,23px);left:16px}.yf-design .category>span{right:12px}}
+@media(min-width:601px) and (max-width:1000px){.yf-design .category strong{font-size:18px;left:16px}}
+/* Original legal.css also defines the home section spacing. */
+.yf-design .home-featured{padding-top:15px}
+.yf-design h3{font-weight:700}

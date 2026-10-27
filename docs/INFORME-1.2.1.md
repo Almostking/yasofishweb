@@ -1,5 +1,7 @@
 # Ejecución real — 26 de octubre de 2026
 
+**Migración visual posterior:** el tema reproduce la composición de la maqueta con datos WooCommerce reales. Véase [comparación antes/después, medidas y pruebas](MIGRACION-VISUAL-1.2.1.md); no se afirma equivalencia píxel a píxel.
+
 **Configuración permanente posterior autorizada:** LocalWP conserva ahora el carrito clásico en la misma página/URL, con copia verificable, pruebas repetidas y limpieza completa. Véase [carrito clásico definitivo y procedimiento de hosting](CARRITO-CLASICO-1.2.1.md). La restauración a Cart Blocks descrita en pruebas anteriores ya no representa el estado final actual.
 
 **Actualización posterior:** se completaron pruebas locales de carrito clásico, cantidades, cotización interceptada, order-pay/BACS, estados y generación de correos con restauración y limpieza. Véase [resultados funcionales y límites](PRUEBAS-FUNCIONALES-1.2.1.md). La lista original de pendientes de este documento describe la primera ejecución y queda actualizada por ese informe.
