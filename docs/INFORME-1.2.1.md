@@ -1,5 +1,7 @@
 # Ejecución real — 26 de octubre de 2026
 
+**Configuración permanente posterior autorizada:** LocalWP conserva ahora el carrito clásico en la misma página/URL, con copia verificable, pruebas repetidas y limpieza completa. Véase [carrito clásico definitivo y procedimiento de hosting](CARRITO-CLASICO-1.2.1.md). La restauración a Cart Blocks descrita en pruebas anteriores ya no representa el estado final actual.
+
 **Actualización posterior:** se completaron pruebas locales de carrito clásico, cantidades, cotización interceptada, order-pay/BACS, estados y generación de correos con restauración y limpieza. Véase [resultados funcionales y límites](PRUEBAS-FUNCIONALES-1.2.1.md). La lista original de pendientes de este documento describe la primera ejecución y queda actualizada por ese informe.
 
 Entrega local versionada en rama `codex/yasofish-1.2.1`; commit de implementación `b1771ce`. Se configuró origin para el repositorio identificado sin hacer push. ZIP final: `outputs/yasofish-storefront-child-1.2.1.zip`, SHA256 `8ad085e90553087ad5cb89573d1731028f77e53f030f6e0f951b896cad0cdf29`. Dos construcciones consecutivas produjeron el mismo hash. Los cambios previos de la demostración estática e IDENTIDAD-Y-ENTREGA.md siguen sin confirmar.

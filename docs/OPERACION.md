@@ -1,5 +1,7 @@
 # Desarrollo, actualización y reversión
 
+**Carrito definitivo 1.2.1:** en LocalWP se dejó `[woocommerce_cart]` de forma permanente en la página existente. Consulta [copia verificable, pruebas y procedimiento reproducible para hosting](CARRITO-CLASICO-1.2.1.md); los cambios de esta página son configuración de base de datos y no viajan en el ZIP del tema.
+
 Si tras actualizar PHP sirve código anterior desde OPcache, detener e iniciar el sitio en LocalWP. La vista temporal incluida invalida los dos PHP del tema antes de revisarlos; esta incidencia de caché se observó durante las pruebas y se resolvió para la captura final.
 
 Fuente prevista: https://github.com/Almostking/yasofishweb (público). La copia local y main remoto tienen estructuras diferentes. No hacer push forzado. El remoto contiene la demostración estática en raíz y el tema en subdirectorio; mantener esos archivos al integrar esta propuesta en una rama codex/yasofish-1.2.1 desde main remoto. Publicar un PR y revisar el diff antes de fusionar. Los cambios locales anteriores al trabajo están respaldados en outputs/audit-before.
