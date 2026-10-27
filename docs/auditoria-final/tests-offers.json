@@ -1,0 +1,10 @@
+[
+  {
+    "name": "two_test_products",
+    "pass": true
+  },
+  {
+    "name": "offers_native_query",
+    "pass": true
+  }
+]

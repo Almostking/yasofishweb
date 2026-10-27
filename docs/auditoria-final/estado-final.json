@@ -1,0 +1,32 @@
+{
+    "locale": "es_CL",
+    "currency": "CLP",
+    "country": "CL:CL-TA",
+    "cart_id": 9,
+    "cart_classic": true,
+    "bacs_enabled": "no",
+    "coming_soon": "yes",
+    "products": 0,
+    "orders": 0,
+    "temporary_users": 0,
+    "temporary_pages": 0,
+    "native_empty_categories": {
+        "canas": true,
+        "carretes": true,
+        "senuelos": true,
+        "accesorios": true
+    },
+    "local_unapproved_review_pages": {
+        "compra": true,
+        "contacto": true,
+        "despachos": true,
+        "devoluciones": true,
+        "garantia": true,
+        "privacidad": true,
+        "terminos": true
+    },
+    "unapproved_links_hidden_on_nonlocal_host": true,
+    "email_configured": true,
+    "whatsapp_configured": true,
+    "guard_removed": true
+}

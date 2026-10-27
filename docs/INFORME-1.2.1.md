@@ -1,5 +1,7 @@
 # Ejecución real — 26 de octubre de 2026
 
+**Etapa del 27 de octubre:** [auditoría final e integración comercial](AUDITORIA-FINAL-1.2.1.md) actualiza categorías, filtros, idioma, borradores legales, administración y pruebas. Los pendientes históricos que allí se resuelven no describen el estado final actual.
+
 **Migración visual posterior:** el tema reproduce la composición de la maqueta con datos WooCommerce reales. Véase [comparación antes/después, medidas y pruebas](MIGRACION-VISUAL-1.2.1.md); no se afirma equivalencia píxel a píxel.
 
 **Configuración permanente posterior autorizada:** LocalWP conserva ahora el carrito clásico en la misma página/URL, con copia verificable, pruebas repetidas y limpieza completa. Véase [carrito clásico definitivo y procedimiento de hosting](CARRITO-CLASICO-1.2.1.md). La restauración a Cart Blocks descrita en pruebas anteriores ya no representa el estado final actual.

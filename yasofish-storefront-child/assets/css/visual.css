@@ -48,7 +48,7 @@
 .yf-design .category svg{position:absolute;right:-15px;top:0;width:75%;height:150px;transform:rotate(-16deg)}
 .yf-design .category strong{position:absolute;bottom:22px;left:23px;font-family:'Barlow Condensed',sans-serif;font-size:26px;text-transform:uppercase}
 .yf-design .category span{position:absolute;right:20px;bottom:24px}
-.yf-design .products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.yf-design .yf-empty-products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 .yf-design .product{min-width:0}
 .yf-design .productimage{position:relative;background:#f3f4ef;height:225px;display:block;overflow:hidden}
 .yf-design .productimage svg{width:100%;height:100%;transition:transform .3s}
@@ -78,7 +78,7 @@
 @media(max-width:900px){
 .yf-design .yf-masthead{gap:25px}
 .yf-design .yf-primary-nav{gap:20px;overflow:auto;white-space:nowrap}
-.yf-design .products{grid-template-columns:repeat(2,1fr)}
+.yf-design .yf-empty-products{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:600px){
 .yf-design .topline span:last-child{display:none}
@@ -104,7 +104,7 @@
 .yf-design .categories{grid-template-columns:repeat(2,1fr);gap:10px}
 .yf-design .category{min-height:155px}
 .yf-design .category strong{font-size:23px}
-.yf-design .products{gap:15px}
+.yf-design .yf-empty-products{gap:15px}
 .yf-design .productimage{height:180px}
 .yf-design .product h3{font-size:12px}
 .yf-design .editorial{grid-template-columns:1fr;margin:0 5% 35px}

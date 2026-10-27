@@ -1,0 +1,14 @@
+[
+  {
+    "name": "native_email_verification_preserved",
+    "pass": true
+  },
+  {
+    "name": "pending_order_pay_after_verification",
+    "pass": true
+  },
+  {
+    "name": "bacs_remains_disabled",
+    "pass": true
+  }
+]

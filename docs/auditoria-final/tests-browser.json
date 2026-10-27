@@ -1,0 +1,275 @@
+{
+  "results": [
+    {
+      "name": "spanish_catalog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "native_filters_present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "three_products_native",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "price_filter_real",
+      "pass": true,
+      "detail": "\n\tYF TEST FICTICIO 2\n\t¡Oferta!\n\t\n\t$2.500 El precio original era: $2.500.$2.000El precio actual es: $2.000.\nAgregar al carrito\t\n\t\t\t\n"
+    },
+    {
+      "name": "category_filter_real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sort_price_desc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "search_real",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sale_price_native",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "category_native_url",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "category_archive",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "out_of_stock_native",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "home_1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "home_768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "home_390",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "catalog_390",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "category_1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "category_768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "category_390",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "search_1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "search_768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "search_390",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "product_1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "product_768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "product_390",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "account_1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "account_768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "account_390",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "information_1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "information_768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "information_390",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "account_spanish",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no_english_login",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "seven_information_links",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer_/informacion-compra/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer_/informacion-despachos/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer_/informacion-devoluciones/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer_/informacion-garantia/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer_/informacion-privacidad/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer_/informacion-terminos/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "footer_/informacion-contacto/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "classic_cart_quote",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "quantity_persisted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "total_5750",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "cart_mobile_no_overflow",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "checkout_guard",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty_invalid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "street_required",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "shipping_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "pickup_valid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "whatsapp_intercepted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "order_pay_valid",
+      "pass": false,
+      "detail": ""
+    },
+    {
+      "name": "bacs_not_enabled",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "errors": []
+}

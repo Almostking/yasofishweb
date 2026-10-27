@@ -2,6 +2,12 @@
 
 ## 1.2.1 — 26 de octubre de 2026
 
+### Integración comercial local — 27 de octubre
+
+- Categorías WooCommerce nativas; filtros de búsqueda, categoría, rango de precios y ofertas; orden y descuentos reales. Corregidas colisiones de tarjetas y recomendaciones.
+- Idioma oficial es_CL instalado en LocalWP, siete borradores de revisión, enlaces completos y panel administrativo con campos pendientes y aprobación protegida.
+- Preparación local con respaldo/rollback y pruebas de catálogo, cuenta, cotización, pedido pendiente, correo interceptado y limpieza documentadas. Pagos y próximamente conservan su estado protegido.
+
 - Migración visual de la maqueta original: encabezado, banner con SVG, beneficios, categorías, tarjetas, editorial, footer e iconos; CSS delimitado y datos WooCommerce reales. Capturas equivalentes, pruebas AJAX/búsqueda y validación SVG incluidas.
 
 - Portada más ancha conservando banner, colores y logo; categorías sin productos y estado vacío de destacados.

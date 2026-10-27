@@ -1,0 +1,12 @@
+{
+    "owner_can_edit_business": true,
+    "owner_can_manage_products": true,
+    "owner_can_manage_orders": true,
+    "owner_can_edit_pages": true,
+    "readiness_screen_rendered": true,
+    "native_admin_links": true,
+    "customizer_business_fields": true,
+    "spanish_core": true,
+    "spanish_woocommerce": true,
+    "webp_supported": true
+}

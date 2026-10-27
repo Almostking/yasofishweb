@@ -1,5 +1,7 @@
 # YASOFISH Chile
 
+La [auditoría final e integración comercial local](docs/AUDITORIA-FINAL-1.2.1.md) documenta categorías y filtros nativos, idioma oficial, borradores, capturas, pruebas y límites. Consulta también [administración sin código](docs/ADMINISTRACION-YASOFISH.md) y [datos pendientes y procedencia](docs/DATOS-COMERCIALES.md).
+
 La migración visual de la maqueta al tema hijo y sus capturas equivalentes están en [el informe visual 1.2.1](docs/MIGRACION-VISUAL-1.2.1.md). El diseño conserva las funciones nativas WooCommerce y el carrito clásico; no importa productos ni precios de demostración.
 
 Código de la tienda para WordPress, WooCommerce y el tema Storefront. Revisión correctiva 1.2.1.

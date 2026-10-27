@@ -1,0 +1,11 @@
+{
+    "active_version": true,
+    "sanitize_phone": true,
+    "sanitize_copy": true,
+    "classic_checkout_guard": true,
+    "store_api_checkout_guard": true,
+    "catalog_api_allowed": true,
+    "only_bacs": true,
+    "disabled_bacs_stays_disabled": true,
+    "parent_preserved": true
+}

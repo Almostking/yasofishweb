@@ -196,7 +196,7 @@ add_action( 'storefront_footer', 'yasofish_storefront_footer_details', 10 );
 
 function yasofish_storefront_product_disclaimer() {
 	if ( function_exists( 'is_shop' ) && ( is_shop() || is_product_taxonomy() ) ) {
-		echo '<p class="yf-store-disclaimer">' . esc_html__( 'Precios en pesos chilenos (CLP). Impuestos, despacho y disponibilidad se informan durante la compra según la configuración de la tienda.', 'yasofish-storefront' ) . '</p>';
+		echo '<p class="yf-store-disclaimer">' . esc_html__( 'Precios en pesos chilenos (CLP). Stock, costo y plazo de despacho se confirman antes del pago.', 'yasofish-storefront' ) . '</p>';
 	}
 }
 add_action( 'woocommerce_before_shop_loop', 'yasofish_storefront_product_disclaimer', 8 );
@@ -352,3 +352,5 @@ function yasofish_storefront_menu_fallback( $args ) {
 }
 
 require_once get_stylesheet_directory() . '/template-parts/visual.php';
+
+require_once get_stylesheet_directory() . '/template-parts/commerce.php';
