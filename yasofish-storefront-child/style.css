@@ -3,7 +3,7 @@ Theme Name: YASOFISH Chile
 Theme URI: https://www.instagram.com/yasofish.chile/
 Description: Tema hijo de Storefront para YASOFISH Chile con WooCommerce.
 Author: YASOFISH Chile
-Version: 1.2.0
+Version: 1.2.1
 Requires at least: 6.9
 Requires PHP: 8.3
 License: GPL-2.0-or-later
@@ -47,33 +47,6 @@ body,.site{color:var(--yf-text)} a{color:var(--yf-blue)} a:hover,a:focus{color:v
 
 .site-footer{padding-top:2em}.yf-footer-details{max-width:1200px;margin:0 auto;padding:1em 1.5em 1.5em;color:#c5d8e8}.yf-footer-top{display:flex;justify-content:space-between;align-items:center;gap:2em;padding-bottom:1.5em;border-bottom:1px solid #ffffff26}.yf-footer-brand>a{display:flex;align-items:center;gap:12px;color:#fff}.yf-footer-brand img{width:75px;height:75px;border-radius:50%;background:#fff}.yf-footer-brand strong,.yf-footer-brand small{display:block}.yf-footer-brand strong{font-size:1.2em;font-style:italic}.yf-footer-brand small{color:#9fc9e6;font-size:.65em;letter-spacing:.12em}.yf-footer-brand p,.yf-footer-columns p{color:#b2c6d8;font-size:.85em;line-height:1.6}.yf-footer-social{display:flex;align-items:center;gap:1em}.yf-footer-social a{display:flex;align-items:center;gap:.5em;color:#c5e7ff}.yf-footer-social a span{font-size:1.8em}.yf-footer-columns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2em;padding:1.6em 0}.yf-footer-columns>div{display:flex;flex-direction:column;align-items:flex-start;gap:.45em}.yf-footer-columns h3,.yf-footer-payment h3{margin:0 0 .35em;color:#fff;font-size:.85em;text-transform:uppercase}.yf-footer-columns a,.yf-footer-columns p{font-size:.82em}.yf-footer-columns p{margin:0}.yf-footer-columns .yf-whatsapp{margin:0;padding:.55em .75em}.yf-location{white-space:pre-line}.yf-footer-payment{display:flex;justify-content:space-between;align-items:center;gap:1.5em;padding:1.25em 0;border-top:1px solid #ffffff26;border-bottom:1px solid #ffffff26}.yf-footer-payment small{color:#9eb5c8;font-size:.72em}.yf-footer-gateways{display:flex;flex-wrap:wrap;gap:.6em}.yf-gateway{display:flex;align-items:center;gap:.5em;padding:.45em .7em;border:1px solid #ffffff38;border-radius:4px;color:#fff;font-size:.78em}.yf-gateway img{max-width:60px;max-height:22px}.yf-no-gateways{color:#ffe044;font-size:.8em}.yf-footer-bottom{display:flex;justify-content:space-between;gap:1em;padding-top:1.2em;color:#9eb5c8;font-size:.7em}@media(max-width:768px){.yf-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))}.yf-footer-payment{align-items:flex-start;flex-direction:column}}@media(max-width:480px){.yf-footer-details{padding:1em .4em}.yf-footer-top{align-items:flex-start;flex-direction:column}.yf-footer-columns{gap:1.3em}.yf-footer-bottom{flex-direction:column}}
 
-.site-footer .yf-footer-details{display:block;clear:both;width:100%;grid-column:1/-1}.site-footer .yf-footer-details .yf-footer-columns{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%}@media(max-width:768px){.site-footer .yf-footer-details .yf-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))}}
-
-.site-footer .yf-footer-details{display:block;clear:both;width:100%;grid-column:1/-1}.site-footer .yf-footer-details .yf-footer-columns{display:flex!important;flex-flow:row nowrap!important;width:100%}.site-footer .yf-footer-details .yf-footer-columns>div{flex:1 1 0;min-width:0}.yf-footer-social a span{display:inline-flex;align-items:center}.yf-footer-social .yf-brand-icon{width:28px;height:28px}.yf-footer-details .yf-whatsapp{display:inline-flex;align-items:center;gap:.5em}.yf-footer-details .yf-whatsapp-mark{width:20px;height:20px;color:#25d366}.yf-footer-gateways{flex-direction:row;align-items:center}.yf-gateway{flex-direction:row;align-items:center}@media(max-width:768px){.site-footer .yf-footer-details .yf-footer-columns{flex-flow:row wrap!important}.site-footer .yf-footer-details .yf-footer-columns>div{flex:1 1 calc(50% - 1em)}}
-
-/* Footer refinements: preserve the approved four-column information row. */
-.yf-footer-top{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important;gap:24px!important;padding-bottom:24px!important}
-.yf-footer-top>p{display:none!important}
-.yf-footer-socials{display:flex;flex-flow:row nowrap;align-items:center;gap:16px;color:#a9c5dc;font-size:10px;font-weight:700;letter-spacing:.12em}
-.yf-footer-socials a,.yf-footer-wa{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border:1px solid #ffffff45;border-radius:50%;background:transparent;color:#c3e3f8;cursor:pointer}
-.yf-footer-socials a:hover,.yf-footer-wa:hover{background:#ffffff12;color:#fff}
-.yf-footer-socials .yf-brand-icon{display:block;width:20px;height:20px}
-.yf-footer-socials .yf-whatsapp-mark{color:#25d366}
-.yf-footer-payments{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important;gap:24px!important}
-.yf-payment-list{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;gap:9px!important}
-.yf-payment-list>span{white-space:nowrap}
-.yf-footer-bottom{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important}
-@media(max-width:850px){.yf-footer-payments{flex-wrap:wrap!important}.yf-payment-list{flex-wrap:wrap!important}}
-@media(max-width:560px){.yf-footer-top{flex-wrap:wrap!important}.yf-footer-payments,.yf-footer-bottom{flex-wrap:wrap!important;gap:12px!important}.yf-footer-socials{gap:10px}.yf-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-
-.yf-footer-payments small{border:0!important;grid-column:auto!important;padding:0!important;line-height:1.2!important}
-.yf-payment-list>span{min-height:0!important;line-height:1.2!important}
-.floating .yf-whatsapp-mark{width:20px;height:20px;color:#25d366;vertical-align:middle}
-
-.yf-footer-bottom{padding-right:150px!important}
-@media(max-width:850px){.yf-footer-bottom{padding-right:112px!important;flex-wrap:wrap!important}}
-@media(max-width:560px){.yf-footer-bottom{padding-right:105px!important}}
-
 /* Rotating announcements echo the client's blue promotion strip. */
 .yf-announcement{background:#1d6fa8!important;letter-spacing:.04em!important;text-transform:none!important}
 .yf-announcement__content{display:flex;align-items:center;justify-content:center;gap:.7em;min-width:0;max-width:100%}
@@ -92,3 +65,22 @@ body,.site{color:var(--yf-text)} a{color:var(--yf-blue)} a:hover,a:focus{color:v
 
 .yf-delivery-quote{display:grid;gap:.55em;margin:1.2em 0 0;padding:1.2em;border:1px solid #d6e4ef;border-radius:8px;background:#f4f9fd}.yf-delivery-quote h3{margin:0;color:var(--yf-navy)}.yf-delivery-quote>p{margin:0 0 .35em;color:#52697d;font-size:.9em;line-height:1.5}.yf-delivery-quote label{margin:.25em 0 0;color:var(--yf-navy);font-size:.9em;font-weight:650}.yf-delivery-quote input,.yf-delivery-quote select,.yf-delivery-quote textarea{width:100%;margin:0;padding:.72em .8em;border:1px solid #b8ccdc;border-radius:5px;background:#fff;color:var(--yf-text);font:inherit}.yf-delivery-quote textarea{resize:vertical}.yf-delivery-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8em}.yf-delivery-address{display:grid;gap:.45em}.yf-delivery-address[hidden]{display:none}.yf-delivery-quote .yf-optional{color:#61778a;font-size:.85em;font-weight:400}.yf-delivery-quote .yf-field-note,.yf-delivery-quote .yf-quote-note{font-size:.82em}.yf-delivery-quote .yf-quote-note{padding:.75em;border-left:3px solid var(--yf-cyan);background:#eaf6fc}.yf-delivery-quote .yf-quote-button{width:100%;margin:.2em 0 0;text-align:center;white-space:normal}
 @media(max-width:560px){.yf-delivery-quote{padding:.9em}.yf-delivery-grid{grid-template-columns:1fr}}
+
+/* Storefront keeps its wrappers; widen the homepage without viewport overflow. */
+.home .site-content>.col-full{max-width:1440px;margin-inline:auto;padding-inline:clamp(16px,3vw,48px)}
+.home .content-area,.home .yf-home-content{float:none;width:100%;margin-right:0}
+.yf-home-content{min-width:0}.yf-brand-icon{width:22px;height:22px;vertical-align:middle}
+.site-header .site-search{max-width:420px}.site-search input{width:100%}
+.yf-empty-catalog{padding:2em;background:var(--yf-pale);border-left:4px solid var(--yf-cyan)}
+.yf-footer-columns>div{min-width:0;overflow-wrap:anywhere}
+.yf-footer-bottom{padding-right:0;flex-wrap:wrap}
+@media(max-width:600px){.yf-footer-columns{grid-template-columns:1fr}.yf-footer-top{flex-wrap:wrap}.yf-hero__actions>*{width:100%;text-align:center}}
+:focus-visible{outline:3px solid var(--yf-yellow);outline-offset:3px}
+.site .yf-hero__actions .button:first-child{background:var(--yf-yellow);color:var(--yf-navy);border:0}
+.site .site-footer .yf-footer-details a{color:#c5e7ff}
+.home .site-content{padding-top:0}.home .yf-home-content{padding-top:1.2em}
+.site-header .site-branding{display:block!important;min-height:44px}
+.site .main-navigation ul li a{color:#fff}
+.site-header .yf-header-brand a{display:flex;align-items:center;gap:12px;color:var(--yf-blue);font-weight:800;font-size:1.25em}
+.yf-header-brand img{width:72px;height:72px;object-fit:contain}.yf-header-brand small{display:block;font-size:.48em;letter-spacing:.08em}
+@media(max-width:767px){.site-header .yf-header-brand{margin-bottom:1em!important}.yf-header-brand img{width:56px;height:56px}}

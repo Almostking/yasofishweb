@@ -34,7 +34,7 @@ $logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'medium' ) : get_t
 			<h2 class="yf-section-title" id="yf-categories-title"><?php esc_html_e( 'Encuentra tu equipo', 'yasofish-storefront' ); ?></h2>
 			<div class="yf-category-links">
 				<?php
-				$categories = get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => true, 'number' => 4, 'parent' => 0 ) );
+				$categories = get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => false, 'number' => 4, 'parent' => 0, 'exclude' => array( (int) get_option( 'default_product_cat' ) ) ) );
 				if ( ! is_wp_error( $categories ) && $categories ) :
 					foreach ( $categories as $category ) :
 						$category_link = get_term_link( $category );
@@ -50,7 +50,11 @@ $logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'medium' ) : get_t
 		</section>
 		<section aria-labelledby="yf-featured-title">
 			<h2 class="yf-section-title" id="yf-featured-title"><?php esc_html_e( 'Destacados para tu próxima pesca', 'yasofish-storefront' ); ?></h2>
+			<?php if ( wc_get_products( array( 'featured' => true, 'status' => 'publish', 'limit' => 1, 'return' => 'ids' ) ) ) : ?>
 			<?php echo do_shortcode( '[products limit="4" columns="4" visibility="featured" orderby="menu_order" order="ASC"]' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- WooCommerce escapes product data. ?>
+            <?php else : ?>
+                <p class="yf-empty-catalog"><?php esc_html_e( 'Estamos preparando nuestro catálogo. Pronto encontrarás aquí equipo para tu próxima salida.', 'yasofish-storefront' ); ?></p>
+            <?php endif; ?>
 		</section>
 	<?php endif; ?>
 

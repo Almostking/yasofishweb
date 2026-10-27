@@ -1,0 +1,47 @@
+name: Validar tema y preparar version
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/build.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yasofish-theme
+          path: |
+            outputs/yasofish-storefront-child-*.zip
+            outputs/*.sha256
+  draft-release:
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: yasofish-theme
+          path: outputs
+      - name: Crear borrador para aprobacion
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(sed -n 's/^Version: //p' yasofish-storefront-child/style.css | tr -d '\r')
+          gh release create "v$VERSION" outputs/*.zip outputs/*.sha256 --draft --target "$GITHUB_SHA" --title "YASOFISH $VERSION" --notes "Validaciones sintácticas aprobadas. Requiere pruebas LocalWP y aprobación antes de publicar."
