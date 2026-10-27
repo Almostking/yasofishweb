@@ -501,3 +501,9 @@ body.yf-design.woocommerce-active .site-header{margin-bottom:0}
 /* Original legal.css also defines the home section spacing. */
 .yf-design .home-featured{padding-top:15px}
 .yf-design h3{font-weight:700}
+/* Footer recovery: retain the primary four columns; extra policies are secondary. */
+.yf-design .yf-footer .yf-footer-secondary{display:flex;flex-wrap:wrap;gap:12px 24px;padding:15px 0;border-top:1px solid #ffffff24;font-size:12px}
+.yf-design .yf-footer .yf-footer-review{font-size:12px;color:#ffe044;margin:16px 0 0}
+.yf-design .yf-footer .yf-footer-cta{display:flex;align-items:center;gap:8px}
+.yf-design .yf-footer .yf-footer-cta svg{width:22px;height:22px;flex:none;color:#25d366}
+.yf-design #colophon .yf-footer .yf-footer-cta{font-weight:400}

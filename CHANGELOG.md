@@ -2,6 +2,11 @@
 
 ## 1.2.1 — 26 de octubre de 2026
 
+### Recuperación del footer original — 27 de octubre
+
+- Información recuperada desde el HTML original y guardada como referencia editable; aprobación explícita vinculada a los valores, con ocultamiento a visitantes hasta validar.
+- Orden de Atención al cliente y Novedades restaurado; enlaces legales adicionales conservados en franja secundaria. Capturas antes/original/después a tres anchos y pruebas de permisos documentadas.
+
 ### Integración comercial local — 27 de octubre
 
 - Categorías WooCommerce nativas; filtros de búsqueda, categoría, rango de precios y ofertas; orden y descuentos reales. Corregidas colisiones de tarjetas y recomendaciones.

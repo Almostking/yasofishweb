@@ -68,26 +68,47 @@ function yasofish_visual_footer() {
     yasofish_visual_socials();
     $wa = yasofish_storefront_whatsapp_url( 'Hola YASOFISH, necesito asesoría.' );
     if ( $wa ) { printf( '<a class="yf-social" href="%s" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">%s</a>', esc_url( $wa ), yasofish_visual_icon( 'whatsapp' ) ); } // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static local SVG.
-    echo '</div></div><div class="yf-footer-columns"><section><h3>Pesca</h3>';
+    echo '</div></div>';
+    $references_visible = yasofish_footer_reference_visible();
+    if ( $references_visible && ! yasofish_footer_approved() ) { echo '<p class="yf-footer-review">Referencia de desarrollo · datos comerciales pendientes de aprobación.</p>'; }
+    echo '<div class="yf-footer-columns"><section><h3>Pesca</h3>';
     foreach ( array( 'canas' => 'Cañas', 'carretes' => 'Carretes', 'senuelos' => 'Señuelos', 'accesorios' => 'Accesorios' ) as $slug => $label ) { printf( '<a href="%s">%s</a>', esc_url( yasofish_visual_category_url( $slug, $label ) ), esc_html( $label ) ); }
     echo '</section><section><h3>Atención al cliente</h3>';
-    yasofish_visual_whatsapp( 'Consultar por WhatsApp ↗', 'yf-footer-cta' );
-    if ( function_exists( 'wc_get_page_permalink' ) ) { printf( '<a href="%s">Mi cuenta</a><a href="%s">Mi carrito</a>', esc_url( wc_get_page_permalink( 'myaccount' ) ), esc_url( wc_get_cart_url() ) ); }
-    yasofish_commerce_page_links();
-    echo '<p>Stock, plazo y costo de despacho se confirman antes del pago.</p></section><section><h3>Ubicación</h3>';
-    $has_location = false;
-    foreach ( array( 'yasofish_store_location', 'yasofish_store_hours', 'yasofish_pickup_point', 'yasofish_delivery_hours', 'yasofish_attention_days', 'yasofish_dispatch_zones', 'yasofish_dispatch_rates', 'yasofish_dispatch_times' ) as $key ) {
-        $value = get_theme_mod( $key, '' );
-        if ( $value ) { printf( '<p>%s</p>', esc_html( $value ) ); $has_location = true; }
+    if ( $wa ) { printf( '<a class="yf-footer-cta" href="%s" target="_blank" rel="noopener noreferrer">%s Consultar por WhatsApp ↗</a>', esc_url( $wa ), yasofish_visual_icon( 'whatsapp' ) ); } // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static SVG.
+    if ( function_exists( 'wc_get_page_permalink' ) ) { printf( '<a href="%s">Mi cuenta / Crear cuenta</a><a href="%s">Mi carrito</a>', esc_url( wc_get_page_permalink( 'myaccount' ) ), esc_url( wc_get_cart_url() ) ); }
+    foreach ( array( 'compra' => 'Información de compra y privacidad', 'terminos' => 'Términos y condiciones · borrador' ) as $key => $label ) {
+        $url = yasofish_commerce_page_url( $key );
+        if ( 'terminos' === $key ) { $pages = get_option( 'yasofish_information_pages', array() ); if ( get_post_meta( (int) ( $pages[$key] ?? 0 ), '_yasofish_policy_approved', true ) ) { $label = 'Términos y condiciones'; } }
+        if ( $url ) { printf( '<a href="%s">%s</a>', esc_url( $url ), esc_html( $label ) ); }
     }
-    if ( ! $has_location ) { echo '<p>Consulta el punto de retiro y coordina tu visita con nosotros.</p>'; }
     $phone = yasofish_storefront_sanitize_whatsapp( get_theme_mod( 'yasofish_phone', '' ) );
-    if ( $phone ) { printf( '<a href="tel:+%s">Llámanos: +%s</a>', esc_attr( $phone ), esc_html( $phone ) ); }
+    if ( $phone ) { $display_phone = preg_match( '/^56(9)(\d{4})(\d{4})$/', $phone, $parts ) ? '+56 ' . $parts[1] . ' ' . $parts[2] . ' ' . $parts[3] : '+' . $phone; printf( '<a href="tel:+%s">Llámanos: %s</a>', esc_attr( $phone ), esc_html( $display_phone ) ); }
     $email = sanitize_email( get_theme_mod( 'yasofish_email', '' ) );
     if ( $email ) { printf( '<a href="%s">%s</a>', esc_url( 'mailto:' . $email ), esc_html( $email ) ); }
-    echo '</section><section><h3>Novedades de pesca</h3><p>Conoce nuestras novedades y comparte tu próxima salida de pesca.</p><p class="yf-footer-social-label">Síguenos en redes</p><div class="yf-footer-novelty-social">';
+    if ( $references_visible ) {
+        $copy = trim( get_theme_mod( 'yasofish_preparation', '' ) . ' ' . get_theme_mod( 'yasofish_footer_dispatch_terms', '' ) );
+        if ( $copy ) { printf( '<p>%s</p>', esc_html( $copy ) ); }
+    }
+    echo '</section><section><h3>Ubicación</h3>';
+    if ( $references_visible ) {
+        foreach ( array( 'yasofish_store_location', 'yasofish_store_hours', 'yasofish_pickup_point', 'yasofish_delivery_hours' ) as $key ) {
+            $value = get_theme_mod( $key, '' );
+            if ( ! $value ) { continue; }
+            if ( 'yasofish_store_location' === $key ) {
+                $address_parts = explode( ',', $value, 2 );
+                $address_html = esc_html( $address_parts[0] ) . ( isset( $address_parts[1] ) ? '<br><strong>' . esc_html( trim( $address_parts[1] ) ) . '</strong>' : '' );
+                echo '<p class="yf-location"><svg class="yf-location-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 22s8-4.5 8-12a8 8 0 1 0-16 0c0 7.5 8 12 8 12z"/><circle cx="12" cy="10" r="2.5" fill="#082b57"/></svg><span>' . $address_html . '</span></p>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Both address parts escaped above.
+            } else { printf( '<p>%s</p>', esc_html( $value ) ); }
+        }
+    }
+    echo '</section><section><h3>Novedades de pesca</h3>';
+    $news = get_theme_mod( 'yasofish_footer_news', '' );
+    if ( $news ) { printf( '<p>%s</p>', esc_html( $news ) ); }
+    echo '<p class="yf-footer-social-label">Síguenos en redes</p><div class="yf-footer-novelty-social">';
     yasofish_visual_socials();
-    echo '</div></section></div><div class="yf-footer-payments"><div><h3>Métodos de pago previstos</h3><small>Stock y despacho confirmados antes de pagar</small></div><div class="yf-payment-list"><span>Transferencia directa <small>previa coordinación</small></span><span>Mercado Pago en tienda <small>solo presencial</small></span></div></div>';
+    echo '</div></section></div><nav class="yf-footer-secondary" aria-label="Más información de compra">';
+    foreach ( array( 'despachos' => 'Despachos y retiros', 'devoluciones' => 'Cambios y devoluciones', 'garantia' => 'Garantía legal', 'privacidad' => 'Privacidad', 'contacto' => 'Contacto' ) as $key => $label ) { $url = yasofish_commerce_page_url( $key ); if ( $url ) { printf( '<a href="%s">%s</a>', esc_url( $url ), esc_html( $label ) ); } }
+    echo '</nav><div class="yf-footer-payments"><div><h3>Métodos de pago previstos</h3><small>Stock y despacho confirmados antes de pagar</small></div><div class="yf-payment-list"><span>Transferencia directa <small>previa coordinación</small></span><span>Mercado Pago en tienda <small>solo presencial</small></span></div></div>';
     printf( '<div class="yf-footer-bottom"><span>© %s YASOFISH Chile</span><span>Catálogo exclusivamente de pesca</span></div></div></div>', esc_html( wp_date( 'Y' ) ) );
     if ( $wa ) { printf( '<a class="floating" href="%s" target="_blank" rel="noopener noreferrer">%s<span>Conversemos</span></a>', esc_url( $wa ), yasofish_visual_icon( 'whatsapp' ) ); } // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Static local SVG.
 }

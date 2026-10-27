@@ -25,3 +25,6 @@
 - Hosting, HTTPS, respaldo/restauración, remitente y entrega real de correos, seguridad de acceso y autorización de lanzamiento.
 
 El Personalizador expone campos vacíos para contacto/atención/retiro, días, zonas, tarifas, plazos y datos de identidad. No se copiaron domicilios ni plazos de demostración. Apariencia → Preparación YASOFISH muestra los pendientes al administrador; los visitantes no reciben avisos técnicos sobre campos faltantes. La lógica fiscal, stock, pedidos, banco y transporte permanece en WooCommerce y sus ajustes nativos.
+# Actualización del footer, 27 de octubre
+
+Dirección, horario, retiro, delivery y preparación se recuperaron del HTML original como referencias editables **sin aprobación comercial**. Ya no están vacíos, pero permanecen ocultos para visitantes hasta validación. Véanse [procedencia, valores exactos y aprobación](FOOTER-RECUPERADO-1.2.1.md). Los demás pendientes de este documento continúan vigentes.

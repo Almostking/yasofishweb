@@ -1,0 +1,31 @@
+[
+  {
+    "name": "reference_1440_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "reference_768_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "reference_390_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "before_1440_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "before_768_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "before_390_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "no_javascript_exceptions",
+    "pass": true,
+    "errors": []
+  }
+]

@@ -1,0 +1,243 @@
+[
+  {
+    "name": "after-owner_1440_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "after-owner_768_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "after-owner_390_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "after-public_1440_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "after-public_768_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "after-public_390_no_overflow",
+    "pass": true
+  },
+  {
+    "name": "recovered_Hernán Fuenzalida 2276",
+    "pass": true
+  },
+  {
+    "name": "recovered_Iquique, Chile",
+    "pass": true
+  },
+  {
+    "name": "recovered_10:00–16:00",
+    "pass": true
+  },
+  {
+    "name": "recovered_10:00–16:30",
+    "pass": true
+  },
+  {
+    "name": "recovered_Calle China 4439",
+    "pass": true
+  },
+  {
+    "name": "recovered_19:00–22:30",
+    "pass": true
+  },
+  {
+    "name": "recovered_días por confirmar",
+    "pass": true
+  },
+  {
+    "name": "recovered_18:00",
+    "pass": true
+  },
+  {
+    "name": "recovered_disponibilidad y costo por confirmar",
+    "pass": true
+  },
+  {
+    "name": "recovered_preparación de 2 a 4 días",
+    "pass": true
+  },
+  {
+    "name": "recovered_Pronto podrás recibir ofertas y avisos de reposición con tu autorización",
+    "pass": true
+  },
+  {
+    "name": "recovered_Mi cuenta / Crear cuenta",
+    "pass": true
+  },
+  {
+    "name": "no_demo_offer",
+    "pass": true
+  },
+  {
+    "name": "four_primary_columns",
+    "pass": true
+  },
+  {
+    "name": "extra_policy_links_secondary",
+    "pass": true
+  },
+  {
+    "name": "tel",
+    "pass": true
+  },
+  {
+    "name": "mailto",
+    "pass": true
+  },
+  {
+    "name": "configured_whatsapp",
+    "pass": true
+  },
+  {
+    "name": "social_instagram.com/yasofish.chile/",
+    "pass": true
+  },
+  {
+    "name": "social_facebook.com/share/1K7tk5ff9G/",
+    "pass": true
+  },
+  {
+    "name": "social_tiktok.com/@yasofishchile",
+    "pass": true
+  },
+  {
+    "name": "original_svg_paths",
+    "pass": true
+  },
+  {
+    "name": "internal_/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/",
+    "pass": true
+  },
+  {
+    "name": "internal_/product-category/canas/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/product-category/canas/",
+    "pass": true
+  },
+  {
+    "name": "internal_/product-category/carretes/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/product-category/carretes/",
+    "pass": true
+  },
+  {
+    "name": "internal_/product-category/senuelos/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/product-category/senuelos/",
+    "pass": true
+  },
+  {
+    "name": "internal_/product-category/accesorios/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/product-category/accesorios/",
+    "pass": true
+  },
+  {
+    "name": "internal_/my-account/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/my-account/",
+    "pass": true
+  },
+  {
+    "name": "internal_/cart/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/cart/",
+    "pass": true
+  },
+  {
+    "name": "internal_/informacion-compra/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/informacion-compra/",
+    "pass": true
+  },
+  {
+    "name": "internal_/informacion-terminos/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/informacion-terminos/",
+    "pass": true
+  },
+  {
+    "name": "internal_/informacion-despachos/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/informacion-despachos/",
+    "pass": true
+  },
+  {
+    "name": "internal_/informacion-devoluciones/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/informacion-devoluciones/",
+    "pass": true
+  },
+  {
+    "name": "internal_/informacion-garantia/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/informacion-garantia/",
+    "pass": true
+  },
+  {
+    "name": "internal_/informacion-privacidad/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/informacion-privacidad/",
+    "pass": true
+  },
+  {
+    "name": "internal_/informacion-contacto/",
+    "pass": true
+  },
+  {
+    "name": "no_php_error_/informacion-contacto/",
+    "pass": true
+  },
+  {
+    "name": "no_duplicated_primary_copy",
+    "pass": true
+  },
+  {
+    "name": "unapproved_public_hidden",
+    "pass": true
+  },
+  {
+    "name": "coming_soon_public",
+    "pass": true
+  },
+  {
+    "name": "no_javascript_exceptions",
+    "pass": true,
+    "errors": []
+  }
+]

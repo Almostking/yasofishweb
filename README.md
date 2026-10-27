@@ -21,3 +21,6 @@ La raíz del repositorio contiene una versión estática para revisar la aparien
 ## Requisitos de publicación
 
 Se necesita un hosting WordPress con HTTPS, Storefront y WooCommerce. El sitio productivo no se publica desde GitHub Pages. El tema no incluye credenciales, base de datos ni una pasarela de pago; WooCommerce administra esos componentes en el servidor.
+## Actualización del footer
+
+La [recuperación del footer original](docs/FOOTER-RECUPERADO-1.2.1.md) conserva los datos de la maqueta como referencias editables pendientes de aprobación y documenta capturas, controles y límites.

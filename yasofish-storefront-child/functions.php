@@ -354,3 +354,4 @@ function yasofish_storefront_menu_fallback( $args ) {
 require_once get_stylesheet_directory() . '/template-parts/visual.php';
 
 require_once get_stylesheet_directory() . '/template-parts/commerce.php';
+require_once get_stylesheet_directory() . '/template-parts/footer-settings.php';
