@@ -1,5 +1,7 @@
 # Ejecución real — 26 de octubre de 2026
 
+**Actualización posterior:** se completaron pruebas locales de carrito clásico, cantidades, cotización interceptada, order-pay/BACS, estados y generación de correos con restauración y limpieza. Véase [resultados funcionales y límites](PRUEBAS-FUNCIONALES-1.2.1.md). La lista original de pendientes de este documento describe la primera ejecución y queda actualizada por ese informe.
+
 Entrega local versionada en rama `codex/yasofish-1.2.1`; commit de implementación `b1771ce`. Se configuró origin para el repositorio identificado sin hacer push. ZIP final: `outputs/yasofish-storefront-child-1.2.1.zip`, SHA256 `8ad085e90553087ad5cb89573d1731028f77e53f030f6e0f951b896cad0cdf29`. Dos construcciones consecutivas produjeron el mismo hash. Los cambios previos de la demostración estática e IDENTIDAD-Y-ENTREGA.md siguen sin confirmar.
 
 Durante la revisión hubo código anterior servido desde OPcache; se invalidaron los dos PHP del tema para verificar el código actual. La documentación explica cómo reiniciar el sitio LocalWP si vuelve a ocurrir. El servidor de vista temporal se cerró al terminar.
