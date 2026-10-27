@@ -18,10 +18,13 @@ Requisitos recomendados actuales de referencia: WordPress 6.9+, PHP 8.3+, MySQL 
 - Apariencia coordinada para catálogo, ficha, carro, checkout y avisos de pedido.
 - Recomendaciones al pie de la ficha: hasta cuatro productos que comparten categoría con el producto actual, para mantenerlas dentro del equipo de pesca.
 - Enlace de WhatsApp por producto y asesoría con texto prellenado, habilitado solo al configurar un teléfono válido.
+- Cotización del carro con modalidad de entrega, nombre de quien recibe, región, comuna, ciudad/localidad y dirección; casa/departamento y referencias son opcionales. La dirección se solicita solo para delivery o envío a regiones. Al enviarla, se abre WhatsApp con el mensaje preparado y el cliente decide si lo envía.
+- El formulario repite las condiciones informadas: preparación de 2 a 4 días; delivery local desde las 18:00 h con disponibilidad y costo por confirmar; envío regional cotizado por destino; retiros con dirección, horario y coordinación publicados. La solicitud no cobra: después de aceptar stock, total y plazo, YASOFISH crea el pedido, el cliente paga por transferencia y el abono se verifica antes de preparar y despachar.
+- En esta etapa no se ofrece factura ni se solicita RUT o razón social en el formulario. Configurar y probar la emisión de boleta electrónica antes de habilitar ventas online.
 - Aviso superior, textos de portada, teléfono y WhatsApp separados y editables desde el Personalizador; WhatsApp queda apagado hasta confirmar su número.
 - Pie horizontal con categorías de pesca, Instagram, Facebook, TikTok y WhatsApp, dirección editable y solo los métodos habilitados en WooCommerce; añade enlaces a las páginas de privacidad y términos una vez publicadas.
 - Carrito, pagos, stock, impuestos, pedidos y despachos delegados a WooCommerce y sus extensiones.
-- No hay credenciales de proveedor, bases de datos, llamadas de pago personalizadas ni formularios propios que recojan información.
+- No hay credenciales de proveedor, bases de datos ni llamadas de pago personalizadas. El formulario de cotización no envía datos al servidor; al elegir abrir WhatsApp, incluye en el mensaje el destino y el carro. El usuario revisa y envía el mensaje desde WhatsApp.
 
 ## Cuentas, cartera de clientes y avisos
 
@@ -42,11 +45,11 @@ MailPoet y Back In Stock Notifications son extensiones; hay que revisar sus plan
 - [ ] Logo vectorial o PNG de alta resolución con autorización de marca.
 - [ ] Productos: nombres, SKUs, categorías, precios CLP, fotos autorizadas, dimensiones y peso, stock y variaciones.
 - [ ] Mantener categorías de WooCommerce dentro del rubro pesca (cañas, carretes, señuelos y accesorios); clasificar cada producto para que las recomendaciones relacionadas muestren equipo de pesca.
-- [ ] Confirmar información tributaria y documentos de venta que se entregarán al comprador.
-- [ ] Flujo preparado en el tema: el carro ofrece “Cotizar despacho por WhatsApp” con un resumen de productos y solicita comuna/modalidad. El checkout normal se detiene para evitar cobrar sin costo de envío confirmado. Tras la aceptación, crear el pedido WooCommerce con el total final y enviar el enlace de pago. El WhatsApp comercial debe configurarse en el Personalizador.
+- [ ] Confirmar con SII/asesoría contable el régimen aplicable y habilitar la emisión de boleta electrónica antes de iniciar ventas; por ahora no se ofrecen facturas.
+- [ ] Flujo preparado en el tema: el carro solicita modalidad, nombre de quien recibe y destino; para delivery/envío regional también pide calle y número. Casa/departamento y referencias son opcionales. El checkout normal se detiene para evitar cobrar sin costo de envío confirmado. Tras aceptar costo y plazo, crear el pedido WooCommerce con el total final y enviar el enlace de pago. Configurar el WhatsApp comercial en el Personalizador.
 - [ ] Transferencia online: en WooCommerce → Ajustes → Pagos → Pagos sin conexión, activar “Transferencia bancaria directa” (BACS), ingresar la cuenta solo desde el escritorio protegido y revisar los textos en la página de pedido y correo. WooCommerce no confirma depósitos: comprobar el abono real en BCI antes de pasar de “En espera” a “Procesando”. Marcar “Completado” tras despachar o entregar.
 - [ ] Mercado Pago: por ahora se usa exclusivamente en el terminal de la tienda física. No instalar ni activar un gateway online de tarjeta hasta que el titular decida sumar ese canal; si se incorpora después, probarlo en staging con credenciales del titular.
-- [ ] Despacho: confirmar cobertura por comuna, tarifas/vías, plazos de transporte, hora de corte, días del delivery desde las 18:00 h, días del retiro coordinado en Alto Hospicio y vigencia de cada cotización. Mantener cotización manual antes del pago donde no exista tarifa automática confiable.
+- [ ] Despacho: confirmar cobertura por comuna, tarifas/vías y plazos de transporte; hoy el plazo y costo se cotizan según destino. Confirmar hora de corte, días del delivery desde las 18:00 h, días del retiro coordinado en Alto Hospicio y vigencia de cada cotización. Mantener cotización manual antes del pago donde no exista tarifa automática confiable.
 - [ ] WhatsApp: confirmar si el teléfono informado también recibirá mensajes, luego configurar el número y revisar el texto prellenado.
 - [ ] Cuentas cliente: habilitar registro de WooCommerce, recuperación mediante enlace de contraseña y avisos de privacidad; probar registro, restablecimiento y acceso a pedidos.
 - [ ] Equipo: definir personas, cuentas individuales, rol mínimo necesario y MFA para cuentas administrativas.

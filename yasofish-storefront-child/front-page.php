@@ -28,7 +28,7 @@ $logo_url = $logo_id ? wp_get_attachment_image_url( $logo_id, 'medium' ) : get_t
 	</section>
 
 	<?php if ( ! class_exists( 'WooCommerce' ) ) : ?>
-		<p class="yf-config-note"><?php esc_html_e( 'Instala y activa WooCommerce para mostrar categorías, productos, carro y compra.', 'yasofish-storefront' ); ?></p>
+		<p class="yf-config-note"><?php esc_html_e( 'Estamos preparando nuestro catálogo de pesca. Escríbenos para consultar disponibilidad.', 'yasofish-storefront' ); ?></p>
 	<?php else : ?>
 		<section aria-labelledby="yf-categories-title">
 			<h2 class="yf-section-title" id="yf-categories-title"><?php esc_html_e( 'Encuentra tu equipo', 'yasofish-storefront' ); ?></h2>

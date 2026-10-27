@@ -12,9 +12,9 @@ No se debe crear una orden con despacho en $0, cobrar un monto parcial ni mostra
 
 ## Recorrido del cliente
 
-1. Agrega los productos y cantidades a la carro de la tienda.
-2. Solicita por WhatsApp una cotización e indica comuna, dirección o modalidad de retiro. La tienda confirma stock.
-3. YASOFISH informa por escrito la vía disponible, costo del despacho, plazo estimado, preparación de 2 a 4 días y total final. Se aclara si el plazo se cuenta desde la confirmación del pago.
+1. Agrega productos y cantidades al carro.
+2. En el formulario de cotización indica cómo recibirás el pedido, nombre de quien lo recibe, región, comuna y ciudad/localidad. Para delivery o envío a regiones, informa calle y número; departamento/casa y referencias son opcionales. Al continuar se abre WhatsApp con el resumen para revisar y enviar.
+3. YASOFISH confirma stock, modalidad disponible y el costo y plazo concretos según destino. Se informa la preparación de 2 a 4 días y el rango de transporte estimado para esa vía; el cliente recibe y acepta el total final antes de pagar.
 4. El cliente acepta la cotización.
 5. YASOFISH registra el pedido en WooCommerce con productos, cantidades, dirección/retiro, método y cargo de despacho acordados; luego envía el enlace de pago de ese pedido.
 6. El cliente paga por transferencia directa y WooCommerce muestra las instrucciones y datos bancarios configurados para esa orden.
@@ -26,8 +26,12 @@ No se debe crear una orden con despacho en $0, cobrar un monto parcial ni mostra
 ### Despacho
 
 - Definir zonas, comunas cubiertas, transportistas o vías locales, costos, horarios/días de operación y plazos que se ofrecerán.
+- Mantener la información entregada por el titular: delivery en Iquique y Alto Hospicio desde las 18:00 h, con disponibilidad y costo por confirmar; envíos regionales con costo y plazo por destino; preparación de 2 a 4 días. No sustituir estos datos por una tarifa ficticia.
+- Retiros: Hernán Fuenzalida 2276, Iquique, lunes a jueves 10:00–16:00 h y viernes a domingo 10:00–16:30 h; Calle China 4439, sector La Pampa, Alto Hospicio, previa coordinación entre 19:00 y 22:30 h, días por confirmar.
 - Solo activar tarifas automáticas cuando sean estables, verificables y suficientes para mostrar el total antes del pago.
 - Para los destinos que requieren cálculo individual, mantener la cotización previa por WhatsApp. Crear la orden pagable después de que el cliente acepte el total.
+- La solicitud de cotización no es una compra ni una aceptación de pago. No exigir aceptación de términos comerciales en esta etapa; los términos y el total final deben mostrarse y aceptarse antes de cobrar.
+- No se ofrece factura en la etapa inicial. No pedir RUT o razón social para la cotización. Acordar y configurar con SII/asesoría contable la emisión de la boleta electrónica antes de abrir ventas.
 - Incluir el importe acordado como línea de envío del pedido y dejar la vía, destino y plazo en las notas del pedido.
 - Antes del lanzamiento, completar: cobertura por comuna; precio por vía/destino; plazo de transporte; hora de corte; días del delivery local; disponibilidad desde las 18:00; días del punto de retiro de Calle China 4439; y vigencia de cada cotización.
 

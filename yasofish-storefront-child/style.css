@@ -3,7 +3,7 @@ Theme Name: YASOFISH Chile
 Theme URI: https://www.instagram.com/yasofish.chile/
 Description: Tema hijo de Storefront para YASOFISH Chile con WooCommerce.
 Author: YASOFISH Chile
-Version: 1.1.0
+Version: 1.2.0
 Requires at least: 6.9
 Requires PHP: 8.3
 License: GPL-2.0-or-later
@@ -89,3 +89,6 @@ body,.site{color:var(--yf-text)} a{color:var(--yf-blue)} a:hover,a:focus{color:v
 .yf-footer-legal{display:flex;justify-content:center;gap:1.5em;flex-wrap:wrap;padding:.8em 0;border-top:1px solid #ffffff26}.yf-footer-legal a{color:#c5e7ff;font-size:.82em;text-decoration:underline;text-underline-offset:3px}
 
 .yf-footer-social-label{margin:.55em 0 .2em;color:#9fc9e6;font-size:.74em!important;font-weight:700;letter-spacing:.06em}.yf-footer-novelty-social{display:flex!important;flex-direction:row!important;align-items:center;flex-wrap:wrap;gap:.45em!important;margin:.2em 0}.yf-footer-novelty-social a{display:inline-flex;align-items:center;gap:.28em;padding:.35em .45em;border:1px solid #ffffff35;border-radius:18px;color:#d8eafa;font-size:.72em!important;line-height:1}.yf-footer-novelty-social a:hover{background:#ffffff14;color:#fff}.yf-footer-novelty-social .yf-brand-icon{display:block;width:16px;height:16px;flex:0 0 16px}
+
+.yf-delivery-quote{display:grid;gap:.55em;margin:1.2em 0 0;padding:1.2em;border:1px solid #d6e4ef;border-radius:8px;background:#f4f9fd}.yf-delivery-quote h3{margin:0;color:var(--yf-navy)}.yf-delivery-quote>p{margin:0 0 .35em;color:#52697d;font-size:.9em;line-height:1.5}.yf-delivery-quote label{margin:.25em 0 0;color:var(--yf-navy);font-size:.9em;font-weight:650}.yf-delivery-quote input,.yf-delivery-quote select,.yf-delivery-quote textarea{width:100%;margin:0;padding:.72em .8em;border:1px solid #b8ccdc;border-radius:5px;background:#fff;color:var(--yf-text);font:inherit}.yf-delivery-quote textarea{resize:vertical}.yf-delivery-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8em}.yf-delivery-address{display:grid;gap:.45em}.yf-delivery-address[hidden]{display:none}.yf-delivery-quote .yf-optional{color:#61778a;font-size:.85em;font-weight:400}.yf-delivery-quote .yf-field-note,.yf-delivery-quote .yf-quote-note{font-size:.82em}.yf-delivery-quote .yf-quote-note{padding:.75em;border-left:3px solid var(--yf-cyan);background:#eaf6fc}.yf-delivery-quote .yf-quote-button{width:100%;margin:.2em 0 0;text-align:center;white-space:normal}
+@media(max-width:560px){.yf-delivery-quote{padding:.9em}.yf-delivery-grid{grid-template-columns:1fr}}

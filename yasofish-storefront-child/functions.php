@@ -18,6 +18,9 @@ function yasofish_storefront_assets() {
 	if ( function_exists( 'is_product' ) && is_product() ) {
 		wp_enqueue_script( 'yasofish-related-carousel', get_stylesheet_directory_uri() . '/assets/js/related-carousel.js', array(), $version, true );
 	}
+	if ( function_exists( 'is_cart' ) && is_cart() ) {
+		wp_enqueue_script( 'yasofish-delivery-quote', get_stylesheet_directory_uri() . '/assets/js/delivery-quote.js', array(), $version, true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'yasofish_storefront_assets', 20 );
 
@@ -29,7 +32,7 @@ function yasofish_storefront_customize_register( $wp_customize ) {
 		'priority' => 35,
 	) );
 	$settings = array(
-		'yasofish_announcement' => array( __( 'Avisos rotativos (uno por línea)', 'yasofish-storefront' ), __( "OFERTAS DEMO · Revisa ofertas de artículos de pesca\nNOVEDADES DEMO · Cañas, carretes, señuelos y accesorios\nDESTACADO DEMO · Caña Austral Spinning 2,10 m", 'yasofish-storefront' ), 320 ),
+		'yasofish_announcement' => array( __( 'Avisos rotativos (uno por línea)', 'yasofish-storefront' ), __( "EQUÍPATE PARA PESCAR · Cañas, carretes, señuelos y accesorios\nATENCIÓN PERSONALIZADA · Te asesoramos por WhatsApp\nDESPACHOS A TODO CHILE · Consulta opciones según tu destino", 'yasofish-storefront' ), 320 ),
 		'yasofish_hero_title' => array( __( 'Título de portada', 'yasofish-storefront' ), __( '¡Que pique la aventura!', 'yasofish-storefront' ), 100 ),
 		'yasofish_hero_copy' => array( __( 'Texto de portada', 'yasofish-storefront' ), __( 'Cañas, carretes y señuelos para tu próxima salida. Explora tu equipo y conversemos de pesca.', 'yasofish-storefront' ), 240 ),
 		'yasofish_hero_button' => array( __( 'Texto del botón principal', 'yasofish-storefront' ), __( 'Ver catálogo', 'yasofish-storefront' ), 40 ),
@@ -119,16 +122,28 @@ function yasofish_storefront_cart_quote_button() {
 			continue;
 		}
 		$name = wp_strip_all_tags( $product->get_name() );
-		$lines[] = sprintf( '• %1$d × %2$s', absint( $cart_item['quantity'] ), $name );
+		$lines[] = sprintf( '%1$d × %2$s', absint( $cart_item['quantity'] ), $name );
 	}
 	if ( empty( $lines ) ) {
 		return;
 	}
 
-	$message = __( 'Hola YASOFISH, quisiera cotizar este carro antes de pagar:', 'yasofish-storefront' ) . "\n" . implode( "\n", $lines ) . "\n\n" . __( "Mi comuna y dirección/retiro: (indicar)\nPreferencia de entrega: (indicar)\nPor favor confirmen stock, costo de despacho, plazo y total final.", 'yasofish-storefront' );
-	$url = yasofish_storefront_whatsapp_url( $message );
-	if ( $url ) {
-		printf( '<a class="checkout-button button alt wc-forward yf-quote-button" href="%1$s" target="_blank" rel="noopener noreferrer">%2$s</a><p class="yf-quote-note">%3$s</p>', esc_url( $url ), esc_html__( 'Cotizar despacho por WhatsApp', 'yasofish-storefront' ), esc_html__( 'El pedido pagable se creará después de que aceptes el costo y el plazo de entrega.', 'yasofish-storefront' ) );
+	$phone = preg_replace( '/\D+/', '', (string) get_theme_mod( 'yasofish_whatsapp', '' ) );
+	if ( $phone ) {
+		printf( '<form class="yf-delivery-quote" data-phone="%1$s" data-items="%2$s">', esc_attr( $phone ), esc_attr( wp_json_encode( $lines ) ) );
+		echo '<h3>' . esc_html__( 'Cotiza tu despacho', 'yasofish-storefront' ) . '</h3><p>' . esc_html__( 'Indica el destino para confirmar disponibilidad, costo y plazo antes de pagar.', 'yasofish-storefront' ) . '</p>';
+		echo '<label for="yf-delivery-method">¿Cómo quieres recibir tu pedido? <span aria-hidden="true">*</span></label><select id="yf-delivery-method" name="method" required><option value="">Selecciona una opción</option><option value="delivery-local">Delivery en Iquique o Alto Hospicio · desde las 18:00 h</option><option value="shipping-region">Envío a otra región</option><option value="pickup-iqq">Retiro en tienda · Hernán Fuenzalida 2276, Iquique</option><option value="pickup-hospicio">Retiro coordinado · Calle China 4439, Alto Hospicio</option></select><p class="yf-field-note">' . esc_html__( 'Preparación: 2 a 4 días. Disponibilidad, costo y plazo de delivery o envío regional se confirman por destino antes del pago. El retiro en Iquique es de lunes a jueves, 10:00–16:00 h, y viernes a domingo, 10:00–16:30 h. El retiro en Alto Hospicio es previa coordinación, de 19:00–22:30 h; días por confirmar.', 'yasofish-storefront' ) . '</p>';
+		echo '<label for="yf-delivery-name">Nombre de quien recibe <span aria-hidden="true">*</span></label><input id="yf-delivery-name" name="name" type="text" autocomplete="name" maxlength="80" required>';
+		echo '<div class="yf-delivery-grid"><div><label for="yf-delivery-region">Región <span aria-hidden="true">*</span></label><select id="yf-delivery-region" name="region" required><option value="">Selecciona una región</option>';
+		$regions = array( 'Arica y Parinacota', 'Tarapacá', 'Antofagasta', 'Atacama', 'Coquimbo', 'Valparaíso', 'Metropolitana de Santiago', 'O’Higgins', 'Maule', 'Ñuble', 'Biobío', 'La Araucanía', 'Los Ríos', 'Los Lagos', 'Aysén', 'Magallanes y de la Antártica Chilena' );
+		foreach ( $regions as $region ) {
+			printf( '<option value="%1$s">%1$s</option>', esc_attr( $region ) );
+		}
+		echo '</select></div><div><label for="yf-delivery-commune">Comuna <span aria-hidden="true">*</span></label><input id="yf-delivery-commune" name="commune" type="text" autocomplete="address-level2" maxlength="80" required></div></div>';
+		echo '<label for="yf-delivery-city">Ciudad o localidad <span aria-hidden="true">*</span></label><input id="yf-delivery-city" name="city" type="text" autocomplete="address-level2" maxlength="80" required>';
+		echo '<div class="yf-delivery-address"><label for="yf-delivery-street">Calle y número <span aria-hidden="true">*</span></label><input id="yf-delivery-street" name="street" type="text" autocomplete="street-address" maxlength="120"><label for="yf-delivery-unit">Casa, departamento, block o piso <span class="yf-optional">(opcional)</span></label><input id="yf-delivery-unit" name="unit" type="text" maxlength="100"><label for="yf-delivery-notes">Referencias o instrucciones para la entrega <span class="yf-optional">(opcional)</span></label><textarea id="yf-delivery-notes" name="notes" rows="3" maxlength="300"></textarea></div>';
+		echo '<p class="yf-field-note">' . esc_html__( 'YASOFISH no ofrece factura en esta etapa. La boleta electrónica debe quedar habilitada en el sistema tributario antes de iniciar ventas.', 'yasofish-storefront' ) . '</p>';
+		echo '<p class="yf-quote-note">' . esc_html__( 'Este paso solo solicita una cotización. Primero confirmaremos stock, costo y plazo. Si aceptas el total, YASOFISH registrará el pedido y te indicará cómo pagar por transferencia. El pago se verifica antes de preparar el pedido.', 'yasofish-storefront' ) . '</p><button class="checkout-button button alt wc-forward yf-quote-button" type="submit">' . esc_html__( 'Preparar consulta por WhatsApp', 'yasofish-storefront' ) . '</button></form>';
 	} elseif ( current_user_can( 'edit_theme_options' ) ) {
 		echo '<p class="yf-config-note">' . esc_html__( 'Configura el WhatsApp comercial en Apariencia → Personalizar → YASOFISH Chile para habilitar la cotización del carro.', 'yasofish-storefront' ) . '</p>';
 	} else {

@@ -33,4 +33,4 @@ El paquete es código fuente para instalar. No se pudo probar visualmente dentro
 
 Marca
 -----
-La imagen de marca proporcionada pertenece a YASOFISH Chile. Sustituye el logo de demostración por el original de alta resolución autorizado para uso comercial.
+La imagen de marca proporcionada pertenece a YASOFISH Chile. Usa únicamente versiones autorizadas y de alta resolución del logo para la tienda.
