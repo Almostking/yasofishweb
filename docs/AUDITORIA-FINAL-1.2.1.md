@@ -71,6 +71,7 @@ Evidencia sanitizada de resultados se adjunta en `docs/auditoria-final/`. No se 
 
 ## Incidencias y seguridad
 
+- La comparación de checksums detectó diferencias de finales de línea entre Windows y CI. El constructor normaliza CRLF a LF al empaquetar texto; no modifica imágenes ni la configuración local. Se vuelve a ejecutar CI para verificar el mismo ZIP en ambos entornos.
 - Se corrigió el caso real de filtros HTML con precios vacíos: WooCommerce interpretaba el límite vacío como cero. Se omiten solo esos valores vacíos antes de la consulta; cero explícito sigue siendo un límite válido.
 - Los errores de arranque del arnés CLI de QA (orden de registro del Personalizador y cantidad de argumentos de save_post) se corrigieron. No fueron errores de páginas de visitantes; no se borraron registros para ocultarlos.
 - Sigue el aviso preexistente de `php_imagick.dll` ausente en PHP de Local. Se detectó soporte WebP mediante el editor disponible; no se certifica conversión masiva ni rendimiento con imágenes reales.

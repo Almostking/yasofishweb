@@ -28,7 +28,11 @@ with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
         entry = zipfile.ZipInfo(p.relative_to(ROOT).as_posix(), (2026,1,1,0,0,0))
         entry.compress_type = zipfile.ZIP_DEFLATED
         entry.external_attr = 0o100644 << 16
-        z.writestr(entry,p.read_bytes())
+        data = p.read_bytes()
+        # Git checkouts may use CRLF on Windows; package text identically on CI.
+        if p.suffix != '.png':
+            data = data.replace(b'\r\n', b'\n')
+        z.writestr(entry,data)
 with zipfile.ZipFile(target) as z:
     assert z.testzip() is None
     assert all(n.startswith('yasofish-storefront-child/') and '..' not in n for n in z.namelist())
