@@ -5,3 +5,21 @@
 .sme-note{max-width:40rem;margin:1rem 0 1.25rem;padding:.75rem 1rem;border-left:3px solid var(--lime);background:#071f3899;color:#f2f7fa;font-size:.92rem;line-height:1.55}
 
 .yf-email-link{display:block;margin:.55rem 0;font-weight:650;overflow-wrap:anywhere}
+
+/* Quote-first delivery details */
+.checkout-intro{max-width:58em;color:#53687e;line-height:1.6}.delivery-checkout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:1.2rem;align-items:start;margin-top:1.5rem}.delivery-card,.delivery-checkout .summary,.quote-submit{padding:clamp(1rem,3vw,1.6rem);border:1px solid #d6e4ef;border-radius:12px;background:#fff;box-shadow:0 8px 24px #09274a0b}.delivery-card h2{margin:.1em 0 1em;color:#082b57}.delivery-card label{display:block;margin:.8em 0 .35em;color:#173b63;font-size:.93em;font-weight:650}.delivery-card input,.delivery-card select,.delivery-card textarea{display:block;width:100%;margin-top:.35em;padding:.8em;border:1px solid #b8ccdc;border-radius:6px;background:#fff;color:#173b63;font:inherit}.delivery-card textarea{resize:vertical}.delivery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1rem}.delivery-address-fields{margin-top:.3rem}.delivery-address-fields[hidden]{display:none}.optional{color:#687c90;font-size:.85em;font-weight:400}.pickup-location,.demo-tax-note{margin:1em 0;padding:.9em 1em;border-left:3px solid #14a8df;background:#edf7fc;color:#244664;line-height:1.55}.demo-tax-note{border-left-color:#f0c300;background:#fff9db;font-size:.88em}.quote-submit{grid-column:1/-1;background:#f3f8fc}.quote-submit p{margin:0 0 .9em;color:#50677e;font-size:.9em;line-height:1.55}.checkout .steps{margin:1em 0;padding:.8em 1em;border-radius:8px;background:#eaf5fc;color:#0b5591;font-weight:700}.checkout textarea[aria-label="Mensaje de cotización"]{width:100%;min-height:180px;margin:.5em 0 1em;padding:.85em;border:1px solid #b8ccdc;border-radius:7px;font:inherit;line-height:1.5}.checkout .summary h2{margin-top:0}.checkout .summary .note{font-size:.88em;line-height:1.5}
+@media(max-width:760px){.delivery-checkout{grid-template-columns:1fr}.delivery-grid{grid-template-columns:1fr}.quote-submit{grid-column:auto}}
+
+/* Checkout: keep delivery form and order summary in a balanced desktop layout. */
+.checkout{max-width:1180px}
+.checkout form.delivery-checkout{grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);gap:1.25rem;align-items:start}
+.delivery-checkout>.delivery-card{grid-column:1;grid-row:1;min-width:0}
+.delivery-checkout>.summary{grid-column:2;grid-row:1;min-width:0;background:#f2f8fc;border-color:#c9deed}
+.delivery-checkout>.summary h2{font-size:1.35rem;line-height:1.25;color:#082b57}
+.delivery-checkout>.summary p{gap:1rem;align-items:flex-start;line-height:1.5}
+.delivery-checkout>.summary p strong{text-align:right;overflow-wrap:anywhere}
+.delivery-checkout>.quote-submit{grid-column:1/-1;min-width:0}
+.delivery-grid{column-gap:1.25rem}
+.delivery-card input,.delivery-card select,.delivery-card textarea{box-sizing:border-box;min-width:0}
+@media(max-width:900px){.checkout form.delivery-checkout{grid-template-columns:minmax(0,1fr)}.delivery-checkout>.delivery-card,.delivery-checkout>.summary,.delivery-checkout>.quote-submit{grid-column:1;grid-row:auto}}
+@media(max-width:600px){.checkout{max-width:100%}.delivery-grid{grid-template-columns:minmax(0,1fr)}}
