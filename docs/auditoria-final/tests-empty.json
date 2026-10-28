@@ -1,0 +1,46 @@
+[
+  {
+    "name": "empty_native_category_/product-category/canas/",
+    "pass": true
+  },
+  {
+    "name": "empty_native_category_/product-category/carretes/",
+    "pass": true
+  },
+  {
+    "name": "empty_native_category_/product-category/senuelos/",
+    "pass": true
+  },
+  {
+    "name": "empty_native_category_/product-category/accesorios/",
+    "pass": true
+  },
+  {
+    "name": "empty_catalog_1440",
+    "pass": true
+  },
+  {
+    "name": "empty_catalog_768",
+    "pass": true
+  },
+  {
+    "name": "empty_catalog_390",
+    "pass": true
+  },
+  {
+    "name": "final_home_1440",
+    "pass": true
+  },
+  {
+    "name": "final_home_768",
+    "pass": true
+  },
+  {
+    "name": "final_home_390",
+    "pass": true
+  },
+  {
+    "name": "empty_cart_spanish",
+    "pass": true
+  }
+]

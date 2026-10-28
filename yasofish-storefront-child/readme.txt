@@ -29,7 +29,7 @@ Seguridad y alcance
 -------------------
 El tema no solicita, almacena ni transmite datos de pago y no tiene credenciales. WooCommerce gestiona las transferencias y sus instrucciones desde el escritorio de la tienda; no incluyas datos bancarios en este tema. WordPress/WooCommerce validan carrito, pedido y cantidades en servidor. Mantén WordPress, Storefront, WooCommerce y extensiones actualizados; utiliza HTTPS, MFA para administradores y copias de respaldo.
 
-El paquete es código fuente para instalar. No se pudo probar visualmente dentro de una instalación WordPress porque este espacio no contiene una instancia de WordPress, WooCommerce ni Storefront. Completa la lista de verificación de INSTALLACION.md con el hosting y datos reales antes de aceptar ventas.
+Versión 1.2.1: validada sintácticamente con PHP 8.3.36 y JavaScript con Node. Instalada en LocalWP y revisada a 1440, 768 y 390 px mediante vista temporal de loopback, conservando el modo próximamente. Carrito vacío y cuentas cargan; pedidos, pagos y carrito con productos pendientes de prueba. Informe completo y rollback en docs/ del repositorio.
 
 Marca
 -----

@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "name": "native_variation_form",
+      "pass": true
+    },
+    {
+      "name": "native_variation_enabled",
+      "pass": true
+    },
+    {
+      "name": "variation_in_native_cart",
+      "pass": true
+    },
+    {
+      "name": "password_form_preserved",
+      "pass": true
+    },
+    {
+      "name": "protected_description_hidden",
+      "pass": true
+    },
+    {
+      "name": "no_variation_js_errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

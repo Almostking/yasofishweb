@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "name": "nine_memory_cards",
+      "pass": true
+    },
+    {
+      "name": "reference_category_filter",
+      "pass": true
+    },
+    {
+      "name": "reference_sale_filter",
+      "pass": true
+    },
+    {
+      "name": "reference_counter",
+      "pass": true
+    },
+    {
+      "name": "reference_row",
+      "pass": true
+    },
+    {
+      "name": "reference_quantity",
+      "pass": true
+    },
+    {
+      "name": "reference_total",
+      "pass": true
+    },
+    {
+      "name": "original_quote_form",
+      "pass": true
+    },
+    {
+      "name": "empty_reference_quote_invalid",
+      "pass": true
+    },
+    {
+      "name": "original_pickup_copy",
+      "pass": true
+    },
+    {
+      "name": "quote_modal_only",
+      "pass": true
+    },
+    {
+      "name": "original_jig_options",
+      "pass": true
+    },
+    {
+      "name": "jig_option_copy",
+      "pass": true
+    },
+    {
+      "name": "original_whatsapp_modal",
+      "pass": true
+    },
+    {
+      "name": "reference_disabled_account",
+      "pass": true
+    },
+    {
+      "name": "reference_account_modal",
+      "pass": true
+    },
+    {
+      "name": "native_cart_not_populated_by_demo",
+      "pass": true
+    },
+    {
+      "name": "no_commercial_add_requests",
+      "pass": true
+    },
+    {
+      "name": "no_external_messages",
+      "pass": true
+    },
+    {
+      "name": "no_reference_js_errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "blockedExternalRequests": []
+}

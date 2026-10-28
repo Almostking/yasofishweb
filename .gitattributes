@@ -1,0 +1,4 @@
+# Keep edited theme source reproducible across Windows and Linux CI.
+yasofish-storefront-child/functions.php text eol=lf
+yasofish-storefront-child/front-page.php text eol=lf
+yasofish-storefront-child/style.css text eol=lf

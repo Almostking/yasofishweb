@@ -1,5 +1,9 @@
 # Instalación y preparación comercial
 
+## Revisión 1.2.1
+
+Las condiciones de preparación, horarios, direcciones, impuestos y facturación requieren confirmación del titular. El formulario 1.2.1 muestra únicamente condiciones guardadas en el Personalizador; no fija los ejemplos de plazos o direcciones descritos en secciones antiguas. Consulta `docs/OPERACION.md` y `docs/INFORME-1.2.1.md` en el repositorio para actualización, pruebas reales y rollback. Usa carrito clásico `[woocommerce_cart]` para cotizar por WhatsApp. Se conserva el modo próximamente y BACS no se activa automáticamente.
+
 El paquete extiende Storefront; no copia el tema padre ni modifica archivos de WooCommerce. Instala Storefront y WooCommerce por separado en un sitio de pruebas antes de activar este tema.
 
 ## Opción económica viable seleccionada

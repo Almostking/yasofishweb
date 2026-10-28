@@ -1,0 +1,17 @@
+outputs/
+.env
+.env.*
+!.env.example
+node_modules/
+*.pem
+*.key
+*.p12
+*.pfx
+.vercel/
+CONFIGURACION-PRIVADA-YASOFISH.md
+*.sql
+*.sql.gz
+wp-config.php
+auth.json
+vendor/
+__pycache__/

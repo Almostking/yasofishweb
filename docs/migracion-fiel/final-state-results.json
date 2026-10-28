@@ -1,0 +1,18 @@
+{
+  "reference_mode_on": true,
+  "other_theme_settings_unchanged": true,
+  "cart_page_unchanged": true,
+  "classic_cart_bytes": true,
+  "bacs_settings_unchanged": true,
+  "bacs_disabled": true,
+  "coming_soon": true,
+  "information_assignments_unchanged": true,
+  "zero_wc_products": true,
+  "zero_hpos_orders": true,
+  "zero_legacy_orders": true,
+  "qa_database_removed": true,
+  "qa_guard_removed": true,
+  "private_qa_connection_removed": true,
+  "private_account_credentials_removed": true,
+  "db_only_copy_removed": true
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "name": "reference",
+    "width": 1440,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 63,
+      "width": 1440,
+      "height": 124,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 237,
+      "width": 1440,
+      "height": 658.640625,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 2279.828125,
+      "width": 1440,
+      "height": 638.921875,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "reference",
+    "width": 768,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 63,
+      "width": 768,
+      "height": 124,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 237,
+      "width": 768,
+      "height": 674.5625,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 2837.34375,
+      "width": 768,
+      "height": 874.6875,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "reference",
+    "width": 390,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 72,
+      "width": 390,
+      "height": 175,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 293,
+      "width": 390,
+      "height": 748.09375,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 3049.875,
+      "width": 390,
+      "height": 1133.859375,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "after",
+    "width": 1440,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 63,
+      "width": 1440,
+      "height": 124,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 237,
+      "width": 1440,
+      "height": 658.640625,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 2291.21875,
+      "width": 1440,
+      "height": 515.546875,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "after",
+    "width": 768,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 63,
+      "width": 768,
+      "height": 124,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 237,
+      "width": 768,
+      "height": 672.5625,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 2831.734375,
+      "width": 768,
+      "height": 649.21875,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  },
+  {
+    "name": "after",
+    "width": 390,
+    "overflow": false,
+    "header": {
+      "x": 0,
+      "y": 72,
+      "width": 390,
+      "height": 175,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "hero": {
+      "x": 0,
+      "y": 293,
+      "width": 390,
+      "height": 748.09375,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "footer": {
+      "x": 0,
+      "y": 3028.265625,
+      "width": 390,
+      "height": 814.046875,
+      "font": "\"DM Sans\", Arial, sans-serif"
+    },
+    "errors": []
+  }
+]

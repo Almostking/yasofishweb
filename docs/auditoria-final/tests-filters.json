@@ -1,0 +1,14 @@
+[
+  {
+    "name": "category_form_with_empty_prices",
+    "pass": true
+  },
+  {
+    "name": "price_form_uses_sale_price",
+    "pass": true
+  },
+  {
+    "name": "account_password_recovery",
+    "pass": true
+  }
+]

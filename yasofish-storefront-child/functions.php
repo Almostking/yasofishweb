@@ -37,15 +37,22 @@ function yasofish_storefront_customize_register( $wp_customize ) {
 		'yasofish_hero_copy' => array( __( 'Texto de portada', 'yasofish-storefront' ), __( 'Cañas, carretes y señuelos para tu próxima salida. Explora tu equipo y conversemos de pesca.', 'yasofish-storefront' ), 240 ),
 		'yasofish_hero_button' => array( __( 'Texto del botón principal', 'yasofish-storefront' ), __( 'Ver catálogo', 'yasofish-storefront' ), 40 ),
 		'yasofish_whatsapp' => array( __( 'WhatsApp comercial (solo dígitos con código país)', 'yasofish-storefront' ), '', 20 ),
-		'yasofish_phone' => array( __( 'Teléfono de atención (solo dígitos con código país)', 'yasofish-storefront' ), '56966509563', 20 ),
-		'yasofish_email' => array( __( 'Correo de atención', 'yasofish-storefront' ), 'yasofishchile@gmail.com', 120 ),
-		'yasofish_store_location' => array( __( 'Dirección de atención o retiro', 'yasofish-storefront' ), 'Hernán Fuenzalida 2276, Iquique, Chile', 180 ),
-		'yasofish_store_hours' => array( __( 'Horario de la tienda', 'yasofish-storefront' ), __( 'Lunes a jueves: 10:00 a 16:00 h. Viernes a domingo: 10:00 a 16:30 h.', 'yasofish-storefront' ), 180 ),
-		'yasofish_delivery_hours' => array( __( 'Delivery local', 'yasofish-storefront' ), __( 'Iquique y Alto Hospicio, desde las 18:00 h. Consultar disponibilidad y costo.', 'yasofish-storefront' ), 180 ),
-		'yasofish_pickup_point' => array( __( 'Punto de retiro coordinado', 'yasofish-storefront' ), __( 'Calle China 4439, sector La Pampa, Alto Hospicio. Previa coordinación, 19:00 a 22:30 h.', 'yasofish-storefront' ), 220 ),
+		'yasofish_phone' => array( __( 'Teléfono de atención (solo dígitos con código país)', 'yasofish-storefront' ), '', 20 ),
+		'yasofish_email' => array( __( 'Correo de atención', 'yasofish-storefront' ), '', 120 ),
+		'yasofish_store_location' => array( __( 'Dirección de atención o retiro', 'yasofish-storefront' ), '', 180 ),
+		'yasofish_store_hours' => array( __( 'Horario de la tienda', 'yasofish-storefront' ), '', 180 ),
+		'yasofish_delivery_hours' => array( __( 'Delivery local', 'yasofish-storefront' ), '', 180 ),
+		'yasofish_pickup_point' => array( __( 'Punto de retiro coordinado', 'yasofish-storefront' ), '', 220 ),
 	);
+	$settings['yasofish_dispatch_terms'] = array( __( 'Condiciones de despacho', 'yasofish-storefront' ), '', 500 );
+	foreach ( array( 'instagram', 'facebook', 'tiktok' ) as $network ) {
+		$settings[ 'yasofish_' . $network ] = array( ucfirst( $network ) . ' URL', '', 250 );
+	}
 	foreach ( $settings as $id => $data ) {
 		$sanitizer = in_array( $id, array( 'yasofish_whatsapp', 'yasofish_phone' ), true ) ? 'yasofish_storefront_sanitize_whatsapp' : ( 'yasofish_email' === $id ? 'sanitize_email' : ( 'yasofish_announcement' === $id ? 'yasofish_storefront_sanitize_notices' : 'yasofish_storefront_sanitize_setting' ) );
+		if ( in_array( $id, array( 'yasofish_instagram', 'yasofish_facebook', 'yasofish_tiktok' ), true ) ) {
+			$sanitizer = 'esc_url_raw';
+		}
 		$wp_customize->add_setting( $id, array(
 			'default' => $data[1],
 			'sanitize_callback' => $sanitizer,
@@ -104,8 +111,6 @@ function yasofish_storefront_whatsapp_button( $message, $label = '' ) {
 	$url = yasofish_storefront_whatsapp_url( $message );
 	if ( $url ) {
 		printf( '<a class="yf-whatsapp" href="%1$s" target="_blank" rel="noopener noreferrer"><svg class="yf-brand-icon yf-whatsapp-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.768.967-.942 1.165-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.174-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.15-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.15-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.478 1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.307 1.265.49 1.697.627.713.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.174-1.413-.075-.124-.273-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.893-9.884 2.64.001 5.12 1.03 6.99 2.91a9.825 9.825 0 0 1 2.892 6.987c-.003 5.45-4.437 9.879-9.897 9.879m8.413-18.294A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.41z"/></svg>%2$s</a>', esc_url( $url ), esc_html( $label ? $label : __( 'Consultar por WhatsApp', 'yasofish-storefront' ) ) );
-	} elseif ( current_user_can( 'edit_theme_options' ) ) {
-		echo '<p class="yf-config-note">' . esc_html__( 'Agrega el número comercial en Apariencia → Personalizar → YASOFISH Chile para activar WhatsApp.', 'yasofish-storefront' ) . '</p>';
 	}
 }
 
@@ -129,10 +134,11 @@ function yasofish_storefront_cart_quote_button() {
 	}
 
 	$phone = preg_replace( '/\D+/', '', (string) get_theme_mod( 'yasofish_whatsapp', '' ) );
-	if ( $phone ) {
+	if ( yasofish_storefront_whatsapp_url() ) {
 		printf( '<form class="yf-delivery-quote" data-phone="%1$s" data-items="%2$s">', esc_attr( $phone ), esc_attr( wp_json_encode( $lines ) ) );
 		echo '<h3>' . esc_html__( 'Cotiza tu despacho', 'yasofish-storefront' ) . '</h3><p>' . esc_html__( 'Indica el destino para confirmar disponibilidad, costo y plazo antes de pagar.', 'yasofish-storefront' ) . '</p>';
-		echo '<label for="yf-delivery-method">¿Cómo quieres recibir tu pedido? <span aria-hidden="true">*</span></label><select id="yf-delivery-method" name="method" required><option value="">Selecciona una opción</option><option value="delivery-local">Delivery en Iquique o Alto Hospicio · desde las 18:00 h</option><option value="shipping-region">Envío a otra región</option><option value="pickup-iqq">Retiro en tienda · Hernán Fuenzalida 2276, Iquique</option><option value="pickup-hospicio">Retiro coordinado · Calle China 4439, Alto Hospicio</option></select><p class="yf-field-note">' . esc_html__( 'Preparación: 2 a 4 días. Disponibilidad, costo y plazo de delivery o envío regional se confirman por destino antes del pago. El retiro en Iquique es de lunes a jueves, 10:00–16:00 h, y viernes a domingo, 10:00–16:30 h. El retiro en Alto Hospicio es previa coordinación, de 19:00–22:30 h; días por confirmar.', 'yasofish-storefront' ) . '</p>';
+		echo '<label for="yf-delivery-method">Forma de entrega</label><select id="yf-delivery-method" name="method" required><option value="">Selecciona una opción</option><option value="shipping-region">Despacho a domicilio</option><option value="pickup-iqq">Retiro coordinado</option></select>';
+		printf( '<p class="yf-field-note">%s</p>', esc_html( get_theme_mod( 'yasofish_dispatch_terms', '' ) ) );
 		echo '<label for="yf-delivery-name">Nombre de quien recibe <span aria-hidden="true">*</span></label><input id="yf-delivery-name" name="name" type="text" autocomplete="name" maxlength="80" required>';
 		echo '<div class="yf-delivery-grid"><div><label for="yf-delivery-region">Región <span aria-hidden="true">*</span></label><select id="yf-delivery-region" name="region" required><option value="">Selecciona una región</option>';
 		$regions = array( 'Arica y Parinacota', 'Tarapacá', 'Antofagasta', 'Atacama', 'Coquimbo', 'Valparaíso', 'Metropolitana de Santiago', 'O’Higgins', 'Maule', 'Ñuble', 'Biobío', 'La Araucanía', 'Los Ríos', 'Los Lagos', 'Aysén', 'Magallanes y de la Antártica Chilena' );
@@ -142,10 +148,7 @@ function yasofish_storefront_cart_quote_button() {
 		echo '</select></div><div><label for="yf-delivery-commune">Comuna <span aria-hidden="true">*</span></label><input id="yf-delivery-commune" name="commune" type="text" autocomplete="address-level2" maxlength="80" required></div></div>';
 		echo '<label for="yf-delivery-city">Ciudad o localidad <span aria-hidden="true">*</span></label><input id="yf-delivery-city" name="city" type="text" autocomplete="address-level2" maxlength="80" required>';
 		echo '<div class="yf-delivery-address"><label for="yf-delivery-street">Calle y número <span aria-hidden="true">*</span></label><input id="yf-delivery-street" name="street" type="text" autocomplete="street-address" maxlength="120"><label for="yf-delivery-unit">Casa, departamento, block o piso <span class="yf-optional">(opcional)</span></label><input id="yf-delivery-unit" name="unit" type="text" maxlength="100"><label for="yf-delivery-notes">Referencias o instrucciones para la entrega <span class="yf-optional">(opcional)</span></label><textarea id="yf-delivery-notes" name="notes" rows="3" maxlength="300"></textarea></div>';
-		echo '<p class="yf-field-note">' . esc_html__( 'YASOFISH no ofrece factura en esta etapa. La boleta electrónica debe quedar habilitada en el sistema tributario antes de iniciar ventas.', 'yasofish-storefront' ) . '</p>';
 		echo '<p class="yf-quote-note">' . esc_html__( 'Este paso solo solicita una cotización. Primero confirmaremos stock, costo y plazo. Si aceptas el total, YASOFISH registrará el pedido y te indicará cómo pagar por transferencia. El pago se verifica antes de preparar el pedido.', 'yasofish-storefront' ) . '</p><button class="checkout-button button alt wc-forward yf-quote-button" type="submit">' . esc_html__( 'Preparar consulta por WhatsApp', 'yasofish-storefront' ) . '</button></form>';
-	} elseif ( current_user_can( 'edit_theme_options' ) ) {
-		echo '<p class="yf-config-note">' . esc_html__( 'Configura el WhatsApp comercial en Apariencia → Personalizar → YASOFISH Chile para habilitar la cotización del carro.', 'yasofish-storefront' ) . '</p>';
 	} else {
 		echo '<p class="yf-quote-note">' . esc_html__( 'La tienda habilitará la cotización de despacho por WhatsApp antes de aceptar pagos online.', 'yasofish-storefront' ) . '</p>';
 	}
@@ -193,7 +196,7 @@ add_action( 'storefront_footer', 'yasofish_storefront_footer_details', 10 );
 
 function yasofish_storefront_product_disclaimer() {
 	if ( function_exists( 'is_shop' ) && ( is_shop() || is_product_taxonomy() ) ) {
-		echo '<p class="yf-store-disclaimer">' . esc_html__( 'Precios en pesos chilenos (CLP). Impuestos, despacho y disponibilidad se informan durante la compra según la configuración de la tienda.', 'yasofish-storefront' ) . '</p>';
+		echo '<p class="yf-store-disclaimer">' . esc_html__( 'Precios en pesos chilenos (CLP). Stock, costo y plazo de despacho se confirman antes del pago.', 'yasofish-storefront' ) . '</p>';
 	}
 }
 add_action( 'woocommerce_before_shop_loop', 'yasofish_storefront_product_disclaimer', 8 );
@@ -234,6 +237,8 @@ function yasofish_storefront_footer_novelty_socials() {
 	);
 	echo '<p class="yf-footer-social-label">' . esc_html__( 'Síguenos en redes', 'yasofish-storefront' ) . '</p><nav class="yf-footer-novelty-social" aria-label="' . esc_attr__( 'Redes sociales YASOFISH Chile', 'yasofish-storefront' ) . '">';
 	foreach ( $profiles as $profile ) {
+		$profile[1] = get_theme_mod( 'yasofish_' . strtolower( $profile[0] ), '' );
+		if ( ! $profile[1] ) { continue; }
 		printf( '<a href="%1$s" target="_blank" rel="noopener noreferrer" aria-label="%2$s" title="%3$s">%4$s<span>%3$s</span></a>', esc_url( $profile[1] ), esc_attr( sprintf( __( 'YASOFISH Chile en %s', 'yasofish-storefront' ), $profile[0] ) ), esc_html( $profile[0] ), $profile[2] );
 	}
 	echo '</nav>';
@@ -242,7 +247,7 @@ function yasofish_storefront_footer_novelty_socials() {
 function yasofish_storefront_footer_details() {
 	echo '<div class="yf-footer-details"><div class="yf-footer-top">';
 	printf( '<div class="yf-footer-brand"><a href="%1$s"><img src="%2$s" alt="%3$s" width="86" height="86"><span><strong>YASOFISH CHILE</strong><small>ARTÍCULOS DE PESCA</small></span></a><p>%4$s</p></div>', esc_url( home_url( '/' ) ), esc_url( get_stylesheet_directory_uri() . '/assets/images/yasofish-logo.png' ), esc_attr__( 'YASOFISH Chile', 'yasofish-storefront' ), esc_html__( 'Equipo para tu próxima salida. De pescador a pescador, de norte a sur.', 'yasofish-storefront' ) );
-	echo '<div class="yf-footer-social"><strong>' . esc_html__( 'Síguenos', 'yasofish-storefront' ) . '</strong><a href="https://www.instagram.com/yasofish.chile/" target="_blank" rel="noopener noreferrer" aria-label="' . esc_attr__( 'Instagram YASOFISH Chile', 'yasofish-storefront' ) . '"><svg class="yf-brand-icon yf-instagram-mark" viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.9-9.9-67.8-36.2-94.1-26.3-26.3-58.2-34.5-94.1-36.2-37.1-2.1-148.2-2.1-185.3 0-35.8 1.7-67.7 9.9-94 36.2S2.5 107.1.8 143c-2.1 37.1-2.1 148.2 0 185.3 1.7 35.9 9.9 67.8 36.2 94.1 26.3 26.3 58.2 34.5 94.1 36.2 37.1 2.1 148.2 2.1 185.3 0 35.9-1.7 67.8-9.9 94.1-36.2 26.3-26.3 34.5-58.2 36.2-94.1 2.1-37.1 2.1-148.2 0-185.3zM398.8 388c-7.8 19.6-23 34.8-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.6 2.6-132.1-9c-19.6-7.8-34.8-23-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.6 9-132.1c7.8-19.6 23-34.8 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.6-2.6 132.1 9c19.6 7.8 34.8 23 42.6 42.6 11.7 19.6 9 99.5 9 132.1s-2.6 102.6-9 132.1z"/></svg> Instagram ↗</a><a href="https://www.facebook.com/share/1K7tk5ff9G/" target="_blank" rel="noopener noreferrer" aria-label="Facebook YASOFISH Chile"><svg class="yf-brand-icon yf-facebook-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.4 21v-8.3h2.8l.4-3.2h-3.2V7.4c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.8-.1-1.7-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.4H7.2v3.2H10V21h3.4Z"/></svg></a><a href="https://www.tiktok.com/@yasofishchile" target="_blank" rel="noopener noreferrer" aria-label="TikTok YASOFISH Chile"><svg class="yf-brand-icon yf-tiktok-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.73 4.17 1.1 1.11 2.66 1.62 4.17 1.79v4.03c-1.42-.05-2.84-.34-4.17-.95-.58-.25-1.13-.56-1.66-.91-.01 2.77.01 5.54-.02 8.3-.07 1.33-.51 2.66-1.28 3.74-1.25 1.79-3.42 2.95-5.62 2.99-1.35.08-2.7-.29-3.85-.99-1.91-1.14-3.18-3.26-3.22-5.49-.03-1.14.16-2.3.68-3.32.82-1.67 2.31-2.99 4.09-3.57 1.06-.36 2.18-.35 3.29-.16.01 1.48-.01 2.97.02 4.45-.99-.32-2.08-.23-3.01.25-.68.35-1.2.99-1.47 1.71-.23.55-.17 1.18-.06 1.76.25.99 1.1 1.84 2.1 2.08.6.16 1.26.12 1.84-.13.8-.32 1.45-.99 1.76-1.79.1-.35.14-.71.14-1.07.01-4.28-.01-8.56 0-12.84.01-1.1 0-2.2.01-3.3Z"/></svg></a></div></div>';
+	echo '</div>';
 	echo '<div class="yf-footer-columns"><div><h3>' . esc_html__( 'Pesca', 'yasofish-storefront' ) . '</h3>';
 	foreach ( array( 'canas' => 'Cañas', 'carretes' => 'Carretes', 'senuelos' => 'Señuelos', 'accesorios' => 'Accesorios' ) as $slug => $label ) {
 		$term = get_term_by( 'slug', $slug, 'product_cat' );
@@ -255,21 +260,21 @@ function yasofish_storefront_footer_details() {
 		printf( '<a href="%1$s">%2$s</a>', esc_url( wc_get_page_permalink( 'myaccount' ) ), esc_html__( 'Mi cuenta / Crear cuenta', 'yasofish-storefront' ) );
 	}
 	yasofish_storefront_whatsapp_button( __( 'Hola YASOFISH, necesito ayuda con mi compra.', 'yasofish-storefront' ), __( 'Consultar por WhatsApp ↗', 'yasofish-storefront' ) );
-	echo '<p>' . esc_html__( 'Preparación: 2 a 4 días. Despachos locales y a regiones; costo y plazo según destino.', 'yasofish-storefront' ) . '</p></div><div><h3>' . esc_html__( 'Ubicación', 'yasofish-storefront' ) . '</h3>';
-	$location = get_theme_mod( 'yasofish_store_location', 'Hernán Fuenzalida 2276, Iquique, Chile' );
+	echo '<p>' . esc_html__( 'Stock, costo y plazo se confirman antes de pagar.', 'yasofish-storefront' ) . '</p></div><div><h3>' . esc_html__( 'Ubicación', 'yasofish-storefront' ) . '</h3>';
+	$location = get_theme_mod( 'yasofish_store_location', '' );
 	echo '<p class="yf-location">' . esc_html( $location ) . '</p>';
-	printf( '<p class="yf-hours">%s</p>', esc_html( get_theme_mod( 'yasofish_store_hours', __( 'Lunes a jueves: 10:00 a 16:00 h. Viernes a domingo: 10:00 a 16:30 h.', 'yasofish-storefront' ) ) ) );
-	printf( '<p class="yf-pickup">%s</p>', esc_html( get_theme_mod( 'yasofish_pickup_point', __( 'Calle China 4439, sector La Pampa, Alto Hospicio. Previa coordinación, 19:00 a 22:30 h.', 'yasofish-storefront' ) ) ) );
-	printf( '<p class="yf-delivery">%s</p>', esc_html( get_theme_mod( 'yasofish_delivery_hours', __( 'Iquique y Alto Hospicio, desde las 18:00 h. Consultar disponibilidad y costo.', 'yasofish-storefront' ) ) ) );
-	$phone = preg_replace( '/[^0-9]/', '', (string) get_theme_mod( 'yasofish_phone', '56966509563' ) );
+	printf( '<p class="yf-hours">%s</p>', esc_html( get_theme_mod( 'yasofish_store_hours', '' ) ) );
+	printf( '<p class="yf-pickup">%s</p>', esc_html( get_theme_mod( 'yasofish_pickup_point', '' ) ) );
+	printf( '<p class="yf-delivery">%s</p>', esc_html( get_theme_mod( 'yasofish_delivery_hours', '' ) ) );
+	$phone = preg_replace( '/[^0-9]/', '', (string) get_theme_mod( 'yasofish_phone', '' ) );
 	if ( $phone ) {
 		printf( '<a class="yf-phone-link" href="tel:+%1$s">%2$s</a>', esc_attr( $phone ), esc_html__( 'Llamar a +', 'yasofish-storefront' ) . esc_html( $phone ) );
 	}
-	$email = sanitize_email( (string) get_theme_mod( 'yasofish_email', 'yasofishchile@gmail.com' ) );
+	$email = sanitize_email( (string) get_theme_mod( 'yasofish_email', '' ) );
 	if ( $email ) {
 		printf( '<a class="yf-email-link" href="%1$s">%2$s</a>', esc_url( 'mailto:' . $email ), esc_html( $email ) );
 	}
-	echo '</div><div><h3>' . esc_html__( 'Novedades de pesca', 'yasofish-storefront' ) . '</h3><p>' . esc_html__( 'Activa una lista de correo con consentimiento para compartir ofertas y avisos de reposición.', 'yasofish-storefront' ) . '</p>';
+	echo '</div><div><h3>' . esc_html__( 'Novedades de pesca', 'yasofish-storefront' ) . '</h3><p>' . esc_html__( 'Conoce nuestras novedades y comparte tu próxima salida de pesca.', 'yasofish-storefront' ) . '</p>';
 	yasofish_storefront_footer_novelty_socials();
 	echo '</div></div>';
 	$privacy_url = function_exists( 'get_privacy_policy_url' ) ? get_privacy_policy_url() : '';
@@ -285,20 +290,69 @@ function yasofish_storefront_footer_details() {
 		}
 		echo '</nav>';
 	}
-	echo '<div class="yf-footer-payment"><div><h3>' . esc_html__( 'Métodos de pago habilitados', 'yasofish-storefront' ) . '</h3><small>' . esc_html__( 'Solo se muestran los medios activos en WooCommerce.', 'yasofish-storefront' ) . '</small></div><div class="yf-footer-gateways">';
-	$available_gateways = array();
-	if ( function_exists( 'WC' ) && WC() && WC()->payment_gateways() ) {
-		$available_gateways = WC()->payment_gateways()->get_available_payment_gateways();
-		foreach ( $available_gateways as $gateway ) {
-			echo '<span class="yf-gateway"><strong>' . esc_html( $gateway->get_title() ) . '</strong>';
-			if ( $gateway->get_icon() ) {
-				echo wp_kses_post( $gateway->get_icon() );
-			}
-			echo '</span>';
-		}
-	}
-	if ( empty( $available_gateways ) ) {
-		echo '<span class="yf-no-gateways">' . esc_html__( 'Los medios aparecerán al configurarlos.', 'yasofish-storefront' ) . '</span>';
-	}
-	echo '</div></div><div class="yf-footer-bottom"><span>' . esc_html__( 'YASOFISH Chile · Equipamiento exclusivamente de pesca.', 'yasofish-storefront' ) . '</span><span>' . esc_html__( 'Revisa las políticas de compra antes de publicar la tienda.', 'yasofish-storefront' ) . '</span></div></div>';
+	echo '<div class="yf-footer-bottom"><span>' . esc_html__( 'YASOFISH Chile · De pescador a pescador.', 'yasofish-storefront' ) . '</span></div></div>';
 }
+
+function yasofish_storefront_header_setup() {
+    remove_action( 'storefront_header', 'storefront_site_branding', 20 );
+    add_action( 'storefront_header', 'yasofish_storefront_branding', 20 );
+    remove_action( 'storefront_footer', 'storefront_credit', 20 );
+}
+add_action( 'after_setup_theme', 'yasofish_storefront_header_setup', 100 );
+function yasofish_storefront_layout() {
+    if ( is_front_page() ) {
+        remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
+        remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
+    }
+    remove_action( 'storefront_footer', 'storefront_credit', 20 );
+}
+add_action( 'wp', 'yasofish_storefront_layout' );
+add_action( 'get_header', 'yasofish_storefront_layout' );
+function yasofish_storefront_branding() {
+    $logo = get_theme_mod( 'custom_logo' );
+    $url = $logo ? wp_get_attachment_image_url( $logo, 'thumbnail' ) : get_theme_file_uri( 'assets/images/yasofish-logo.png' );
+    printf( '<div class="site-branding yf-header-brand"><a href="%s" rel="home"><img src="%s" width="72" height="72" alt="%s"><span>YASOFISH <small>CHILE · ARTÍCULOS DE PESCA</small></span></a></div>', esc_url( home_url( '/' ) ), esc_url( $url ), esc_attr( get_bloginfo( 'name' ) ) );
+}
+
+/** Server-side guard also covers direct classic checkout and Store API requests. */
+function yasofish_storefront_require_quote( $data, $errors ) {
+    $errors->add( 'yasofish_quote_required', __( 'Coordina el total por WhatsApp y utiliza el enlace de pago del pedido confirmado.', 'yasofish-storefront' ) );
+}
+add_action( 'woocommerce_after_checkout_validation', 'yasofish_storefront_require_quote', 10, 2 );
+function yasofish_storefront_guard_store_api( $result, $server, $request ) {
+    if ( 'POST' === $request->get_method() && preg_match( '#^/wc/store/v[0-9]+/checkout/?$#', $request->get_route() ) ) {
+        return new WP_Error( 'yasofish_quote_required', __( 'Solicita la cotización antes de pagar.', 'yasofish-storefront' ), array( 'status' => 403 ) );
+    }
+    return $result;
+}
+add_filter( 'rest_pre_dispatch', 'yasofish_storefront_guard_store_api', 10, 3 );
+function yasofish_storefront_bacs_only( $gateways ) {
+    return isset( $gateways['bacs'] ) ? array( 'bacs' => $gateways['bacs'] ) : array();
+}
+add_filter( 'woocommerce_available_payment_gateways', 'yasofish_storefront_bacs_only', 100 );
+
+/** Only replace WordPress's automatic page list; assigned menus remain editable. */
+function yasofish_storefront_menu_args( $args ) {
+    if ( isset( $args['theme_location'] ) && in_array( $args['theme_location'], array( 'primary', 'handheld' ), true ) ) {
+        $args['fallback_cb'] = 'yasofish_storefront_menu_fallback';
+    }
+    return $args;
+}
+add_filter( 'wp_nav_menu_args', 'yasofish_storefront_menu_args' );
+function yasofish_storefront_menu_fallback( $args ) {
+    $container_class = isset( $args['container_class'] ) ? $args['container_class'] : 'primary-navigation';
+    echo '<div class="' . esc_attr( $container_class ) . '"><ul class="menu">';
+    printf( '<li><a href="%s">%s</a></li>', esc_url( home_url( '/' ) ), esc_html__( 'Inicio', 'yasofish-storefront' ) );
+    if ( function_exists( 'wc_get_page_permalink' ) ) {
+        foreach ( array( 'shop' => 'Catálogo', 'cart' => 'Carrito', 'myaccount' => 'Mi cuenta' ) as $page => $label ) {
+            printf( '<li><a href="%s">%s</a></li>', esc_url( wc_get_page_permalink( $page ) ), esc_html( $label ) );
+        }
+    }
+    echo '</ul></div>';
+}
+
+require_once get_stylesheet_directory() . '/template-parts/visual.php';
+
+require_once get_stylesheet_directory() . '/template-parts/commerce.php';
+require_once get_stylesheet_directory() . '/template-parts/footer-settings.php';
+require_once get_stylesheet_directory() . '/template-parts/faithful.php';

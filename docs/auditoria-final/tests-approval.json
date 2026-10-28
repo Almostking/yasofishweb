@@ -1,0 +1,7 @@
+{
+    "anonymous_cannot_approve": true,
+    "invalid_nonce_cannot_approve": true,
+    "authorized_test_approval": true,
+    "approval_can_be_revoked": true,
+    "temporary_page_deleted": true
+}

@@ -1,0 +1,173 @@
+{
+  "checks": [
+    {
+      "name": "no_php_error_/shop/",
+      "pass": true
+    },
+    {
+      "name": "native_data_three_cards",
+      "pass": true
+    },
+    {
+      "name": "no_reference_data",
+      "pass": true
+    },
+    {
+      "name": "original_slider_present",
+      "pass": true
+    },
+    {
+      "name": "original_catalog_title",
+      "pass": true
+    },
+    {
+      "name": "native_sale_ajax",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/shop/",
+      "pass": true
+    },
+    {
+      "name": "native_category_ajax",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/shop/",
+      "pass": true
+    },
+    {
+      "name": "native_price_ajax",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/shop/",
+      "pass": true
+    },
+    {
+      "name": "native_ordering",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/shop/",
+      "pass": true
+    },
+    {
+      "name": "native_search",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/shop/",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/product/yf-test-ficticio-1/",
+      "pass": true
+    },
+    {
+      "name": "native_detail_form",
+      "pass": true
+    },
+    {
+      "name": "native_stock",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/shop/",
+      "pass": true
+    },
+    {
+      "name": "native_ajax_count",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/cart/",
+      "pass": true
+    },
+    {
+      "name": "classic_cart",
+      "pass": true
+    },
+    {
+      "name": "quote_preserved",
+      "pass": true
+    },
+    {
+      "name": "quote_rebound_after_ajax",
+      "pass": true
+    },
+    {
+      "name": "quantity_3",
+      "pass": true
+    },
+    {
+      "name": "total_5750",
+      "pass": true
+    },
+    {
+      "name": "native_cart_mobile_no_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/cart/",
+      "pass": true
+    },
+    {
+      "name": "checkout_blocked",
+      "pass": true
+    },
+    {
+      "name": "empty_quote_invalid",
+      "pass": true
+    },
+    {
+      "name": "address_required",
+      "pass": true
+    },
+    {
+      "name": "shipping_valid",
+      "pass": true
+    },
+    {
+      "name": "pickup_does_not_require_address",
+      "pass": true
+    },
+    {
+      "name": "whatsapp_intercepted",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/checkout/order-pay/67/",
+      "pass": true
+    },
+    {
+      "name": "order_pay_native",
+      "pass": false
+    },
+    {
+      "name": "bacs_stays_disabled",
+      "pass": true
+    },
+    {
+      "name": "no_php_error_/my-account/",
+      "pass": true
+    },
+    {
+      "name": "real_account_login",
+      "pass": true
+    },
+    {
+      "name": "real_lost_password",
+      "pass": true
+    },
+    {
+      "name": "no_js_errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

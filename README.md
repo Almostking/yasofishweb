@@ -1,17 +1,28 @@
 # YASOFISH Chile
 
-Código de la tienda para WordPress, WooCommerce y el tema Storefront.
+La revisión vigente es [Migración fiel GitHub → WordPress](docs/MIGRACION-FIEL-1.2.1.md): referencia local completa, capturas antes/original/después a tres anchos, mediciones, pruebas nativas aisladas y rollback ensayado. Los ejemplos solo existen en memoria de LocalWP; el hosting utiliza WooCommerce y datos aprobados. Sigue pendiente la aceptación visual en tablet/móvil.
+
+La [auditoría final e integración comercial local](docs/AUDITORIA-FINAL-1.2.1.md) documenta categorías y filtros nativos, idioma oficial, borradores, capturas, pruebas y límites. Consulta también [administración sin código](docs/ADMINISTRACION-YASOFISH.md) y [datos pendientes y procedencia](docs/DATOS-COMERCIALES.md).
+
+La migración visual de la maqueta al tema hijo y sus capturas equivalentes están en [el informe visual 1.2.1](docs/MIGRACION-VISUAL-1.2.1.md). El diseño conserva las funciones nativas WooCommerce y el carrito clásico; no importa productos ni precios de demostración.
+
+Código de la tienda para WordPress, WooCommerce y el tema Storefront. Revisión correctiva 1.2.1.
+
+Validar y crear ZIP: `python scripts/build.py` (PHP 8.3, Node, Python). Entrega local en `outputs/yasofish-storefront-child-1.2.1.zip` con SHA256. Consulta [operación, actualizaciones y rollback](docs/OPERACION.md), [historial](CHANGELOG.md) e [informe real de ejecución](docs/INFORME-1.2.1.md).
 
 ## Paquete para la tienda
 
-El tema instalable está en `yasofish-storefront-child/` y se entrega como [yasofish-storefront-child-source.zip](yasofish-storefront-child-source.zip). La portada y catálogo leen productos reales de WooCommerce; el carro, cuentas, pedidos, checkout y pagos dependen de WooCommerce. El despacho inicial se cotiza por WhatsApp antes de crear una orden pagable.
+El tema instalable está en `yasofish-storefront-child/`. La portada y catálogo leen productos reales de WooCommerce; el carro, cuentas, pedidos, checkout y pagos dependen de WooCommerce. El despacho inicial se cotiza por WhatsApp antes de crear una orden pagable.
 
 Antes de aceptar ventas se deben instalar WordPress, Storefront y WooCommerce en el hosting, cargar el catálogo y configurar los datos comerciales, boleta electrónica, transferencia BACS, correos y operación de despacho. La cuenta bancaria solo se configura en el escritorio protegido de WooCommerce. Sigue [la guía de instalación](yasofish-storefront-child/INSTALLACION.md) y [el flujo de venta y despacho](yasofish-storefront-child/PROCEDIMIENTO-VENTA-Y-DESPACHO.md).
 
 ## Vista local
 
-`dist/` contiene una versión estática para revisar la apariencia y navegación. No está conectada a WordPress ni procesa pedidos, cuentas o pagos. La vista publicada en GitHub Pages también es estática; no es la tienda comercial.
+La raíz del repositorio contiene una versión estática para revisar la apariencia y navegación. No está conectada a WordPress ni procesa pedidos, cuentas o pagos. La vista publicada en GitHub Pages también es estática; no es la tienda comercial.
 
 ## Requisitos de publicación
 
 Se necesita un hosting WordPress con HTTPS, Storefront y WooCommerce. El sitio productivo no se publica desde GitHub Pages. El tema no incluye credenciales, base de datos ni una pasarela de pago; WooCommerce administra esos componentes en el servidor.
+## Actualización del footer
+
+La [recuperación del footer original](docs/FOOTER-RECUPERADO-1.2.1.md) conserva los datos de la maqueta como referencias editables pendientes de aprobación y documenta capturas, controles y límites.

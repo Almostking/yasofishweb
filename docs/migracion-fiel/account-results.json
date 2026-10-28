@@ -1,0 +1,18 @@
+[
+  {
+    "name": "native_customer_login",
+    "pass": true
+  },
+  {
+    "name": "native_account_orders",
+    "pass": true
+  },
+  {
+    "name": "native_account_edit-address",
+    "pass": true
+  },
+  {
+    "name": "native_account_edit-account",
+    "pass": true
+  }
+]
