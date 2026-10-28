@@ -1,5 +1,7 @@
 # Recuperación fiel del footer — 27 de octubre de 2026
 
+> Revisión vigente: [Migración fiel GitHub → WordPress](MIGRACION-FIEL-1.2.1.md). La referencia completa se muestra solo en LocalWP, con ejemplos en memoria y sin inventario ficticio. Esta instrucción sustituye el ocultamiento de referencias local y la franja adicional de enlaces del footer de informes anteriores. Hosting requiere datos aprobados.
+
 Se trabajó exclusivamente sobre el footer y su administración, en la rama `codex/yasofish-1.2.1`, PR #1. No se modificaron encabezado, banner, catálogo, inventario, carrito ni checkout. Los cambios anteriores siguen documentados en la auditoría general; este informe actualiza únicamente el footer.
 
 ## Fuente comprobada

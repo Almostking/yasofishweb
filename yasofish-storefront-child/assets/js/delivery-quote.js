@@ -1,8 +1,9 @@
 (function () {
 	'use strict';
 
-	const form = document.querySelector('.yf-delivery-quote');
-	if (!form) return;
+	function initQuote(form) {
+	if (!form || form.dataset.yfQuoteBound) return;
+	form.dataset.yfQuoteBound = '1';
 
 	const method = form.querySelector('[name="method"]');
 	const address = form.querySelector('.yf-delivery-address');
@@ -51,4 +52,8 @@
 		const url = 'https://wa.me/' + form.dataset.phone + '?text=' + encodeURIComponent(message);
 		window.location.assign(url);
 	});
+	}
+	function initAll() { document.querySelectorAll('.yf-delivery-quote').forEach(initQuote); }
+	initAll();
+	if (window.jQuery) { window.jQuery(document.body).on('updated_wc_div updated_cart_totals', initAll); }
 }());

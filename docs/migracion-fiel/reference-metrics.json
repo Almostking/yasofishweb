@@ -1,0 +1,764 @@
+[
+  {
+    "side": "reference",
+    "name": "home",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "¡QUE PIQUE\nLA AVENTURA!"
+    ],
+    "boxes": [
+      {
+        "selector": "hero",
+        "x": 0,
+        "y": 237,
+        "width": 1440,
+        "height": 658.640625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "normal"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 2279.828125,
+        "width": 1440,
+        "height": 638.921875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 72,
+        "y": 2446.40625,
+        "width": 1296,
+        "height": 337.34375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "home",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "¡QUE PIQUE\nLA AVENTURA!"
+    ],
+    "boxes": [
+      {
+        "selector": "hero",
+        "x": 0,
+        "y": 237,
+        "width": 768,
+        "height": 674.5625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "normal"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 2837.34375,
+        "width": 768,
+        "height": 874.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 38.390625,
+        "y": 2986.34375,
+        "width": 691.21875,
+        "height": 590.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "home",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "¡QUE PIQUE\nLA AVENTURA!"
+    ],
+    "boxes": [
+      {
+        "selector": "hero",
+        "x": 0,
+        "y": 293,
+        "width": 390,
+        "height": 748.09375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "normal"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 3049.875,
+        "width": 390,
+        "height": 1133.859375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 19.5,
+        "y": 3258.875,
+        "width": 351,
+        "height": 694.265625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "26px 18px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "catalog",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "VAMOS DE PESCA."
+    ],
+    "boxes": [
+      {
+        "selector": "catalogtop",
+        "x": 0,
+        "y": 237,
+        "width": 1440,
+        "height": 214.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "normal"
+      },
+      {
+        "selector": "section cataloglayout",
+        "x": 0,
+        "y": 451.6875,
+        "width": 1440,
+        "height": 1321,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "40px"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 1772.6875,
+        "width": 1440,
+        "height": 638.921875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 72,
+        "y": 1939.265625,
+        "width": 1296,
+        "height": 337.34375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "catalog",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "VAMOS DE PESCA."
+    ],
+    "boxes": [
+      {
+        "selector": "catalogtop",
+        "x": 0,
+        "y": 237,
+        "width": 768,
+        "height": 214.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "normal"
+      },
+      {
+        "selector": "section cataloglayout",
+        "x": 0,
+        "y": 451.6875,
+        "width": 768,
+        "height": 2120,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "40px"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 2571.6875,
+        "width": 768,
+        "height": 874.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 38.390625,
+        "y": 2720.6875,
+        "width": 691.21875,
+        "height": 590.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "catalog",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "VAMOS DE PESCA."
+    ],
+    "boxes": [
+      {
+        "selector": "catalogtop",
+        "x": 0,
+        "y": 293,
+        "width": 390,
+        "height": 283.375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "normal"
+      },
+      {
+        "selector": "section cataloglayout",
+        "x": 0,
+        "y": 576.375,
+        "width": 390,
+        "height": 2095,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "20px"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 2671.375,
+        "width": 390,
+        "height": 1133.859375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 19.5,
+        "y": 2880.375,
+        "width": 351,
+        "height": 694.265625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "26px 18px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "product",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "CAÑA AUSTRAL SPINNING 2,10 M"
+    ],
+    "boxes": [
+      {
+        "selector": "detail",
+        "x": 86.390625,
+        "y": 337,
+        "width": 1267.21875,
+        "height": 826.59375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "65px"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 1832.59375,
+        "width": 1440,
+        "height": 638.921875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 72,
+        "y": 1999.171875,
+        "width": 1296,
+        "height": 337.34375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "product",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "CAÑA AUSTRAL SPINNING 2,10 M"
+    ],
+    "boxes": [
+      {
+        "selector": "detail",
+        "x": 46.078125,
+        "y": 337,
+        "width": 675.84375,
+        "height": 899.375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 1902.09375,
+        "width": 768,
+        "height": 874.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 38.390625,
+        "y": 2051.09375,
+        "width": 691.21875,
+        "height": 590.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "product",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "CAÑA AUSTRAL SPINNING 2,10 M"
+    ],
+    "boxes": [
+      {
+        "selector": "detail",
+        "x": 19.5,
+        "y": 373,
+        "width": 351,
+        "height": 1307.1875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(7, 31, 64)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 2290.1875,
+        "width": 390,
+        "height": 1133.859375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 19.5,
+        "y": 2499.1875,
+        "width": 351,
+        "height": 694.265625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "26px 18px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "cart",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "TU PRÓXIMA SALIDA."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 749,
+        "width": 1440,
+        "height": 638.921875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 72,
+        "y": 915.578125,
+        "width": 1296,
+        "height": 337.34375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "cart",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "TU PRÓXIMA SALIDA."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 791,
+        "width": 768,
+        "height": 874.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 38.390625,
+        "y": 940,
+        "width": 691.21875,
+        "height": 590.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "cart",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "TU PRÓXIMA SALIDA."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 830,
+        "width": 390,
+        "height": 1133.859375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 19.5,
+        "y": 1039,
+        "width": 351,
+        "height": 694.265625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "26px 18px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "information",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "COMPRA INFORMADA, TIENDA TRANSPARENTE."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 2395.796875,
+        "width": 1440,
+        "height": 638.921875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 72,
+        "y": 2562.375,
+        "width": 1296,
+        "height": 337.34375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "information",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "COMPRA INFORMADA, TIENDA TRANSPARENTE."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 2861.65625,
+        "width": 768,
+        "height": 874.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 38.390625,
+        "y": 3010.65625,
+        "width": 691.21875,
+        "height": 590.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "information",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "COMPRA INFORMADA, TIENDA TRANSPARENTE."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 4235.71875,
+        "width": 390,
+        "height": 1133.859375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 19.5,
+        "y": 4444.71875,
+        "width": 351,
+        "height": 694.265625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "26px 18px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "account",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "TU PESCA, A TU RITMO."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 1080.484375,
+        "width": 1440,
+        "height": 638.921875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 72,
+        "y": 1247.0625,
+        "width": 1296,
+        "height": 337.34375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "account",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "TU PESCA, A TU RITMO."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 1110.734375,
+        "width": 768,
+        "height": 874.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 38.390625,
+        "y": 1259.734375,
+        "width": 691.21875,
+        "height": 590.6875,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "32px"
+      }
+    ]
+  },
+  {
+    "side": "reference",
+    "name": "account",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "bodyFont": "\"DM Sans\", Arial, sans-serif",
+    "title": [
+      "TU PESCA, A TU RITMO."
+    ],
+    "boxes": [
+      {
+        "selector": "yf-footer",
+        "x": 0,
+        "y": 1509.734375,
+        "width": 390,
+        "height": 1133.859375,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "25px"
+      },
+      {
+        "selector": "yf-footer-columns",
+        "x": 19.5,
+        "y": 1718.734375,
+        "width": 351,
+        "height": 694.265625,
+        "font": "\"DM Sans\", Arial, sans-serif",
+        "color": "rgb(226, 240, 251)",
+        "background": "rgba(0, 0, 0, 0)",
+        "gap": "26px 18px"
+      }
+    ]
+  }
+]

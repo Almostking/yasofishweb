@@ -1,5 +1,7 @@
 # Auditoría final e integración comercial local — 27 de octubre de 2026
 
+> Revisión vigente: [Migración fiel GitHub → WordPress](MIGRACION-FIEL-1.2.1.md). La referencia completa se muestra solo en LocalWP, con ejemplos en memoria y sin inventario ficticio. Esta instrucción sustituye el ocultamiento de referencias local y la franja adicional de enlaces del footer de informes anteriores. Hosting requiere datos aprobados.
+
 ## Resultado de esta etapa
 
 Se continuó en `codex/yasofish-1.2.1`, PR #1, sobre WordPress LocalWP existente. La portada y sus recursos aprobados no se reconstruyeron. Se completaron catálogo nativo, filtros, idioma oficial, páginas informativas de revisión y administración de pendientes. No es una publicación comercial: faltan datos reales, aprobación legal/comercial, hosting y verificaciones externas.

@@ -1,5 +1,7 @@
 # Administración de YASOFISH sin editar código
 
+> Revisión vigente: [Migración fiel GitHub → WordPress](MIGRACION-FIEL-1.2.1.md). La referencia completa se muestra solo en LocalWP, con ejemplos en memoria y sin inventario ficticio. Esta instrucción sustituye el ocultamiento de referencias local y la franja adicional de enlaces del footer de informes anteriores. Hosting requiere datos aprobados.
+
 ## Punto de partida
 
 LocalWP conserva el carrito clásico en su página existente, BACS apagado y modo próximamente. Las categorías Cañas, Carretes, Señuelos y Accesorios ya existen. No hay inventario ficticio permanente. Los textos legales son borradores visibles en el entorno local, no contratos aprobados.

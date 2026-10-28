@@ -2,6 +2,10 @@
 /** Original mockup composition backed exclusively by live WooCommerce data. */
 defined( 'ABSPATH' ) || exit;
 get_header();
+if ( yasofish_reference_mode() && yasofish_reference_products() ) {
+    echo '<main id="primary" class="site-main yf-home-content">' . yasofish_faithful_html( str_replace( 'data-add=', 'data-yf-reference-add=', yasofish_reference_data()['home'] ) ) . '</main>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Immutable original source; local reference only.
+    get_footer(); return;
+}
 $shop = yasofish_visual_shop_url();
 $title = get_theme_mod( 'yasofish_hero_title', '¡Que pique la aventura!' );
 $standard_title = '¡Que pique la aventura!' === $title;
@@ -31,7 +35,7 @@ $categories = array( 'canas' => array( 'Cañas', 'rod' ), 'carretes' => array( '
 </div></section>
 <section class="section home-featured" aria-labelledby="yf-featured-title"><div class="heading"><div><div class="eyebrow">SELECCIÓN YASOFISH</div><h2 id="yf-featured-title">Destacados para tu próxima pesca.</h2></div><a class="textlink" href="<?php echo esc_url( $shop ); ?>">Explorar productos ↗</a></div>
 <?php if ( function_exists( 'wc_get_products' ) && wc_get_products( array( 'featured' => true, 'status' => 'publish', 'limit' => 1, 'return' => 'ids' ) ) ) : ?>
-    <?php echo do_shortcode( '[products limit="4" columns="4" visibility="featured" orderby="menu_order" order="ASC"]' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- WooCommerce escapes its own product templates. ?>
+    <div class="products"><?php foreach ( wc_get_products( array( 'featured'=>true, 'status'=>'publish', 'limit'=>4, 'orderby'=>'menu_order', 'order'=>'ASC' ) ) as $featured_product ) { yasofish_faithful_card( $featured_product ); } ?></div>
 <?php else : ?>
     <p class="yf-catalog-note">Estamos preparando nuestro catálogo. Consulta disponibilidad con nosotros.</p>
     <div class="products yf-empty-products">

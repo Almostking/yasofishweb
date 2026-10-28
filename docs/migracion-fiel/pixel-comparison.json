@@ -1,0 +1,296 @@
+[
+  {
+    "page": "home",
+    "width": 1440,
+    "reference": [
+      1440,
+      2919
+    ],
+    "wordpress": [
+      1440,
+      2919
+    ],
+    "meanAbsoluteRGB": 0.016785857028662785,
+    "changedPixelsOver5Percent": 0.16627174450915458
+  },
+  {
+    "page": "home",
+    "width": 768,
+    "reference": [
+      768,
+      3712
+    ],
+    "wordpress": [
+      768,
+      3712
+    ],
+    "meanAbsoluteRGB": 1.0879846331716954,
+    "changedPixelsOver5Percent": 3.0578964058010056
+  },
+  {
+    "page": "home",
+    "width": 390,
+    "reference": [
+      390,
+      4184
+    ],
+    "wordpress": [
+      390,
+      4184
+    ],
+    "meanAbsoluteRGB": 1.5939133205863607,
+    "changedPixelsOver5Percent": 4.877678089915183
+  },
+  {
+    "page": "catalog",
+    "width": 1440,
+    "reference": [
+      1440,
+      2412
+    ],
+    "wordpress": [
+      1440,
+      2412
+    ],
+    "meanAbsoluteRGB": 0.036013892727719425,
+    "changedPixelsOver5Percent": 0.36084047355813526
+  },
+  {
+    "page": "catalog",
+    "width": 768,
+    "reference": [
+      768,
+      3446
+    ],
+    "wordpress": [
+      768,
+      3446
+    ],
+    "meanAbsoluteRGB": 0.8912289359240988,
+    "changedPixelsOver5Percent": 2.506529309344167
+  },
+  {
+    "page": "catalog",
+    "width": 390,
+    "reference": [
+      390,
+      3805
+    ],
+    "wordpress": [
+      390,
+      3805
+    ],
+    "meanAbsoluteRGB": 1.3840720150049979,
+    "changedPixelsOver5Percent": 4.186259644866741
+  },
+  {
+    "page": "product",
+    "width": 1440,
+    "reference": [
+      1440,
+      2472
+    ],
+    "wordpress": [
+      1440,
+      2472
+    ],
+    "meanAbsoluteRGB": 0.07339657871868632,
+    "changedPixelsOver5Percent": 0.6661834771664868
+  },
+  {
+    "page": "product",
+    "width": 768,
+    "reference": [
+      768,
+      2777
+    ],
+    "wordpress": [
+      768,
+      2777
+    ],
+    "meanAbsoluteRGB": 1.1599060236866323,
+    "changedPixelsOver5Percent": 3.564951311367183
+  },
+  {
+    "page": "product",
+    "width": 390,
+    "reference": [
+      390,
+      3424
+    ],
+    "wordpress": [
+      390,
+      3424
+    ],
+    "meanAbsoluteRGB": 1.6189856418244268,
+    "changedPixelsOver5Percent": 5.276255092259765
+  },
+  {
+    "page": "cart",
+    "width": 1440,
+    "reference": [
+      1440,
+      1388
+    ],
+    "wordpress": [
+      1440,
+      1388
+    ],
+    "meanAbsoluteRGB": 0.05791873465684705,
+    "changedPixelsOver5Percent": 0.5222842619276337
+  },
+  {
+    "page": "cart",
+    "width": 768,
+    "reference": [
+      768,
+      1666
+    ],
+    "wordpress": [
+      768,
+      1666
+    ],
+    "meanAbsoluteRGB": 1.2002082082833134,
+    "changedPixelsOver5Percent": 3.8542760854341735
+  },
+  {
+    "page": "cart",
+    "width": 390,
+    "reference": [
+      390,
+      1964
+    ],
+    "wordpress": [
+      390,
+      1964
+    ],
+    "meanAbsoluteRGB": 1.8325896043309484,
+    "changedPixelsOver5Percent": 5.948874614862395
+  },
+  {
+    "page": "information",
+    "width": 1440,
+    "reference": [
+      1440,
+      3035
+    ],
+    "wordpress": [
+      1440,
+      3035
+    ],
+    "meanAbsoluteRGB": 0.017924903898956616,
+    "changedPixelsOver5Percent": 0.1849945085118067
+  },
+  {
+    "page": "information",
+    "width": 768,
+    "reference": [
+      768,
+      3736
+    ],
+    "wordpress": [
+      768,
+      3736
+    ],
+    "meanAbsoluteRGB": 1.8349151647632644,
+    "changedPixelsOver5Percent": 5.969578091541756
+  },
+  {
+    "page": "information",
+    "width": 390,
+    "reference": [
+      390,
+      5370
+    ],
+    "wordpress": [
+      390,
+      5370
+    ],
+    "meanAbsoluteRGB": 2.4403772143436946,
+    "changedPixelsOver5Percent": 8.095879291410018
+  },
+  {
+    "page": "account",
+    "width": 1440,
+    "reference": [
+      1440,
+      1719
+    ],
+    "wordpress": [
+      1440,
+      1719
+    ],
+    "meanAbsoluteRGB": 0.014688233899984918,
+    "changedPixelsOver5Percent": 0.13593982289444767
+  },
+  {
+    "page": "account",
+    "width": 768,
+    "reference": [
+      768,
+      1985
+    ],
+    "wordpress": [
+      768,
+      1985
+    ],
+    "meanAbsoluteRGB": 1.1659466397285194,
+    "changedPixelsOver5Percent": 3.6857813811922755
+  },
+  {
+    "page": "account",
+    "width": 390,
+    "reference": [
+      390,
+      2644
+    ],
+    "wordpress": [
+      390,
+      2644
+    ],
+    "meanAbsoluteRGB": 1.679989526358664,
+    "changedPixelsOver5Percent": 5.582159897591063
+  },
+  {
+    "page": "footer",
+    "width": 1440,
+    "reference": [
+      1440,
+      640
+    ],
+    "wordpress": [
+      1440,
+      640
+    ],
+    "meanAbsoluteRGB": 0,
+    "changedPixelsOver5Percent": 0
+  },
+  {
+    "page": "footer",
+    "width": 768,
+    "reference": [
+      768,
+      876
+    ],
+    "wordpress": [
+      768,
+      876
+    ],
+    "meanAbsoluteRGB": 1.5401827474949263,
+    "changedPixelsOver5Percent": 4.120588375190259
+  },
+  {
+    "page": "footer",
+    "width": 390,
+    "reference": [
+      390,
+      1135
+    ],
+    "wordpress": [
+      390,
+      1135
+    ],
+    "meanAbsoluteRGB": 1.9737625663616853,
+    "changedPixelsOver5Percent": 5.744945216310855
+  }
+]

@@ -1,5 +1,7 @@
 # Procedencia y pendientes del negocio — 27 de octubre de 2026
 
+> Revisión vigente: [Migración fiel GitHub → WordPress](MIGRACION-FIEL-1.2.1.md). La referencia completa se muestra solo en LocalWP, con ejemplos en memoria y sin inventario ficticio. Esta instrucción sustituye el ocultamiento de referencias local y la franja adicional de enlaces del footer de informes anteriores. Hosting requiere datos aprobados.
+
 | Dato | Procedencia y tratamiento real |
 |---|---|
 | YASOFISH Chile | Nombre comercial reiterado por el usuario; conserva identidad. No se usó como razón social legal |

@@ -1,0 +1,39 @@
+{
+  "isolated_database": true,
+  "orders": [
+    {
+      "status": "on-hold",
+      "paid": false,
+      "paid_date": false,
+      "total": "2500",
+      "payment": "bacs"
+    },
+    {
+      "status": "pending",
+      "paid": false,
+      "paid_date": false,
+      "total": "2500",
+      "payment": "bacs"
+    }
+  ],
+  "bacs_enabled": "no",
+  "intercepted_emails": [
+    {
+      "html_length": 13165,
+      "nonempty": true
+    },
+    {
+      "html_length": 13010,
+      "nonempty": true
+    },
+    {
+      "html_length": 13179,
+      "nonempty": true
+    },
+    {
+      "html_length": 13010,
+      "nonempty": true
+    }
+  ],
+  "delivered_emails": 0
+}

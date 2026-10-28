@@ -2,6 +2,13 @@
 
 ## 1.2.1 — 26 de octubre de 2026
 
+### Migración fiel de la fuente publicada — 27 de octubre
+
+- HTML, CSS, SVG, recursos y contenido contrastados con main y GitHub Pages; estilos delimitados y plantillas nativas. Footer completo en referencia local, sin enlaces adicionales.
+- Modo local con ejemplos en memoria, protegido por entorno y dominio; no importa inventario ni pedidos. Sustituye la instrucción anterior de ocultar referencias en LocalWP.
+- Cotización reenlazada tras AJAX; se conservan carrito clásico, checkout protegido, variantes, contraseñas y verificación de order-pay.
+- Capturas de seis pantallas a tres anchos y diferencias restantes documentadas. Pruebas nativas aisladas, correos interceptados, limpieza y restauración de 52 tablas verificadas. Véase `docs/MIGRACION-FIEL-1.2.1.md`.
+
 ### Recuperación del footer original — 27 de octubre
 
 - Información recuperada desde el HTML original y guardada como referencia editable; aprobación explícita vinculada a los valores, con ocultamiento a visitantes hasta validar.

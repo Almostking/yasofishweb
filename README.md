@@ -1,5 +1,7 @@
 # YASOFISH Chile
 
+La revisión vigente es [Migración fiel GitHub → WordPress](docs/MIGRACION-FIEL-1.2.1.md): referencia local completa, capturas antes/original/después a tres anchos, mediciones, pruebas nativas aisladas y rollback ensayado. Los ejemplos solo existen en memoria de LocalWP; el hosting utiliza WooCommerce y datos aprobados. Sigue pendiente la aceptación visual en tablet/móvil.
+
 La [auditoría final e integración comercial local](docs/AUDITORIA-FINAL-1.2.1.md) documenta categorías y filtros nativos, idioma oficial, borradores, capturas, pruebas y límites. Consulta también [administración sin código](docs/ADMINISTRACION-YASOFISH.md) y [datos pendientes y procedencia](docs/DATOS-COMERCIALES.md).
 
 La migración visual de la maqueta al tema hijo y sus capturas equivalentes están en [el informe visual 1.2.1](docs/MIGRACION-VISUAL-1.2.1.md). El diseño conserva las funciones nativas WooCommerce y el carrito clásico; no importa productos ni precios de demostración.

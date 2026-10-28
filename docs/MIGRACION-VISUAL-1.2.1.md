@@ -1,5 +1,7 @@
 # Migración visual de la maqueta a Storefront — 26 de octubre de 2026
 
+> Revisión vigente: [Migración fiel GitHub → WordPress](MIGRACION-FIEL-1.2.1.md). La referencia completa se muestra solo en LocalWP, con ejemplos en memoria y sin inventario ficticio. Esta instrucción sustituye el ocultamiento de referencias local y la franja adicional de enlaces del footer de informes anteriores. Hosting requiere datos aprobados.
+
 ## Fuente y alcance
 
 Se inspeccionaron `index.html`, `style.css`, `brand.css`, `legal.css`, `app.js`, `patagonia.svg` y logo del repositorio, la maqueta publicada en https://almostking.github.io/yasofishweb/ y todos los PHP/CSS/JS del tema hijo actual. La imagen adjunta se utilizó como referencia visual, no como instrucciones ni como confirmación de datos comerciales.

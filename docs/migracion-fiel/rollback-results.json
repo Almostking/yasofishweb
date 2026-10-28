@@ -1,0 +1,16 @@
+{
+  "target": "isolated QA schema only",
+  "backup_sha256": "8410d0526072e73bd3535f03f9aa71495608501e4efc3c0807847819d3de7cd0",
+  "restored_tables": 52,
+  "checks": {
+    "table_count": true,
+    "classic_cart_bytes": true,
+    "cart_assignment": true,
+    "bacs_settings": true,
+    "coming_soon": true,
+    "theme_settings": true,
+    "pages": true,
+    "zero_fixture_products": true,
+    "zero_fixture_orders": true
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "file": "index.html",
+    "matches_main": true,
+    "published_git_blob": "66f7f54db135e987ade35a4c677efa3b7f52d735"
+  },
+  {
+    "file": "style.css",
+    "matches_main": true,
+    "published_git_blob": "8c293ebb4f0916a2a813d47f4f85688a578593ae"
+  },
+  {
+    "file": "brand.css",
+    "matches_main": true,
+    "published_git_blob": "fcd92037bde2d240058009606c2f149a14e0dabd"
+  },
+  {
+    "file": "legal.css",
+    "matches_main": true,
+    "published_git_blob": "c1ca671aaa8a86b51f9e0566b2ee274b891745c5"
+  },
+  {
+    "file": "app.js",
+    "matches_main": true,
+    "published_git_blob": "61f2bea5c3f7a0f9ee948bf5cd12e9ba36780c65"
+  }
+]

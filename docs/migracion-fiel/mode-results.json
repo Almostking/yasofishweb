@@ -1,0 +1,12 @@
+{
+  "local_environment": true,
+  "local_hostname": true,
+  "reference_enabled": true,
+  "nine_original_visual_products": true,
+  "visual_products_are_arrays": true,
+  "no_inventory_writes": true,
+  "native_mode_switch": true,
+  "classic_cart": true,
+  "bacs_disabled": true,
+  "coming_soon_stored": true
+}
